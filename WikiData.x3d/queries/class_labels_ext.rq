@@ -1,0 +1,10 @@
+# English labels of every class in the extended class graph (see class_edges_ext.rq).
+# Run: scripts/qlever.sh "$(cat queries/class_labels_ext.rq)" tsv 1200 data/qlever2/class_labels_ext.tsv
+SELECT DISTINCT ?c ?label WHERE {
+  { SELECT DISTINCT ?t WHERE {
+      ?art schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> .
+      { ?item wdt:P31 ?t } UNION { ?item wdt:P279 ?t } } }
+  ?t wdt:P279* ?c .
+  ?c rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+}

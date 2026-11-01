@@ -1,0 +1,7 @@
+# Subclass-of parents of English-Wikipedia-linked items (articles that are classes themselves).
+# Items with no P31 type are typed through these edges (step 2, "P31 and P279 together").
+# Run: scripts/qlever.sh "$(cat queries/item_p279.rq)" tsv 900 data/qlever2/item_p279.tsv
+SELECT ?item ?p WHERE {
+  ?art schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> .
+  ?item wdt:P279 ?p .
+}

@@ -1,0 +1,10 @@
+# Extended class graph: subclass-of edges above every P31 value AND every P279 parent used by an
+# English-Wikipedia-linked item.  Superset of class_edges_p31.rq.
+# Run: scripts/qlever.sh "$(cat queries/class_edges_ext.rq)" tsv 1200 data/qlever2/class_edges_ext.tsv
+SELECT DISTINCT ?c ?p WHERE {
+  { SELECT DISTINCT ?t WHERE {
+      ?art schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> .
+      { ?item wdt:P31 ?t } UNION { ?item wdt:P279 ?t } } }
+  ?t wdt:P279* ?c .
+  ?c wdt:P279 ?p .
+}

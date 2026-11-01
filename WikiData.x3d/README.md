@@ -14,7 +14,7 @@ then folds both for display. Plan, design and the ten QA checks live in the plan
 | --- | --- |
 | 0. Spike: data access, dump layout, scale | done |
 | 1. Dev slice (Vital Articles levels 1 to 5) and first QA report | done |
-| 2. Type spine (P31 + P279 for all articles) | not started |
+| 2. Type spine (P31 + P279 for all articles, YAGO 4.5 scaffold) | done; the scaffold addenda can still grow |
 | 3. Topic spine (categories projected onto the Vital scaffold) | not started |
 | 4. Reconcile, fold, run all ten checks on the full slice | not started |
 | 5. Export contract and one test viewer | not started |
@@ -26,8 +26,9 @@ public QLever endpoint at its index date (not recorded; a few recent pages have 
 ## Requirements
 
 Python 3.11+ with `pyarrow`, `duckdb`, `numpy`, `scipy`, `networkx`; `curl`, `gzip`, `grep`, `sed`.
-Allowlisted hosts: `cdimage.debian.org` (dump mirror), `dumps.wikimedia.org` (only for `run_table.sh`), `qlever.dev`.
-About 4 GB of disk for the Parquet tables, plus up to 2.6 GB while one dump file is being converted.
+Allowlisted hosts: `cdimage.debian.org` (dump mirror), `dumps.wikimedia.org` (only for `run_table.sh`), `qlever.dev`,
+`yago-knowledge.org` (step 2). About 4 GB of disk for the Parquet tables, plus up to 2.6 GB while one dump file is being
+converted and 0.2 GB for the YAGO archive.
 Python is always run as `python3 -I` because the inputs are downloaded data.
 
 ## Run order
@@ -57,6 +58,19 @@ python3 -I scripts/build_dev_slice.py data/vital_parsed data/parquet data/qlever
 python3 -I scripts/category_graph_stats.py data/parquet data/catgraph
 python3 -I scripts/topic_crosstab.py data/catgraph data/dev_slice data/qlever_parquet out/topic_crosstab
 python3 -I scripts/loo_topic_baseline.py data/dev_slice out/loo_topic_baseline.json
+
+# 5. Type spine (step 2): saved QLever queries, YAGO scaffold inputs, build (twice), QA
+for q in class_edges_ext class_labels_ext item_p279; do
+  scripts/qlever.sh "$(cat queries/$q.rq)" tsv 1500 data/qlever2/$q.tsv
+done
+mkdir -p data/yago/tiny_zip
+curl -L -o data/yago/tiny_zip/yago-4.5.0.2-tiny.zip https://yago-knowledge.org/data/yago4.5/yago-4.5.0.2-tiny.zip
+unzip -p data/yago/tiny_zip/yago-4.5.0.2-tiny.zip | head -n 1211 > data/yago/schema_block.ttl
+unzip -p data/yago/tiny_zip/yago-4.5.0.2-tiny.zip | grep -a 'rdfs:subClassOf' > data/yago/subclass_lines.txt
+for run in out/type_spine out/type_spine_2; do
+  python3 -I scripts/build_type_spine.py data/qlever2 data/qlever_parquet data/parquet data/yago config/scaffold_addenda.csv $run
+done
+python3 -I scripts/type_spine_qa.py out/type_spine out/type_spine_2 data/dev_slice data/parquet out/type_spine_qa
 ```
 
 The multistream index (285 MB) is fetched once from the same mirror directory as the dump.
@@ -78,6 +92,11 @@ The multistream index (285 MB) is fetched once from the same mirror directory as
 | `category_graph_stats.py` | Category graph size, cycles, parents, depth from Main topic classifications, article coverage |
 | `topic_crosstab.py` | Vital topics against the category tree's top level (three scorers, NMI, purity) |
 | `loo_topic_baseline.py` | Leave-one-out prediction of a Vital topic from the categories of the other Vital articles |
+| `build_type_spine.py` | Class graph with cycles collapsed, YAGO/schema.org scaffold, ordered primary-parent rule, a primary type and a folded display class for every article |
+| `type_spine_qa.py` | Determinism of two builds, type tree against Vital topics, article depth, a sample of real type paths |
+
+`config/scaffold_addenda.csv` is the hand-checked table that extends YAGO's mapping (`class`, `map` and `unmap` rows; each
+`map` is checked against the expected Wikidata label). `queries/*.rq` are the saved SPARQL texts.
 
 ## Measured results
 
@@ -92,12 +111,18 @@ Full numbers are in `results/`. Headlines:
 | Vital Articles | 49,872 titles, all resolved; P31 typed 86.7%, 99.58% with P279 |
 | Topic agreement | category tops vs Vital topics NMI 0.26; leave-one-out topic prediction 92.5% on 97.8% of articles (majority class 28.4%) |
 | Repeatability | dev slice rebuild is row-identical; builds in 27 s |
+| Type spine | 126,224 classes (7 cycles over 19 classes collapsed), 50 scaffold classes, 98 anchors; 7,012,970 articles (96.7%) get a primary type, 98.8% of them under the scaffold; primary counts add up at every node; two builds are row-identical; 37 s |
+| Type tree vs Vital topics | agreement score 0.50 (category tops: 0.26); People to Person 97%, Geography to Place 88% |
 
 ## Known gaps
 
-- The SPARQL texts behind `class_edges`, `class_labels`, `type_counts` and `item_types` were run interactively and not saved.
-  They will be recreated, and checked against the committed counts, when step 2 extends the export.
-  `queries/untyped_p279.rq.template` is the one query kept as a file.
-- 500 of the 6,411 untyped Vital items point to subclass parents outside the current class export.
+- `queries/class_edges_p31.rq` reproduces the step 0 class export exactly (zero differing lines). The SPARQL texts behind
+  `item_types` (P31 pairs) and `type_counts` were run interactively and are still not saved.
+- 87,130 articles (1.2% of typed) are Unclassified: a long tail of mid-sized classes listed in
+  `results/type_spine/orphans_top.csv` (type of disease, brand, geographical feature, ...) for the next addenda round.
+- 230,703 articles with a Wikidata item have neither P31 nor P279; 5,801 have no item. They get no type.
+- Path precision is not yet reviewed by a person: `results/type_spine/sample_paths.csv` holds 60 real paths. One known
+  quirk: sports disciplines sit under "game" under "creative work" because of Wikidata's own class edges.
+- YAGO 4.5 is CC BY-SA, so tables that carry its class names inherit share-alike.
 - Some visible maintenance categories (for example "Possibly free images") are not flagged hidden and need explicit cleaning in step 3.
 - Wikipedia text is CC BY-SA and Wikidata is CC0. This repo stores IDs, counts and structure, not article text.

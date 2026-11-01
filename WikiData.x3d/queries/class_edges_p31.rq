@@ -1,0 +1,11 @@
+# Subclass-of edges above every type (P31 value) used by an English-Wikipedia-linked item.
+# Re-creation of the step 0 class export; its result must match the committed counts
+# (111,692 usable edges, 75,071 classes in results/class_graph_stats.json).
+# Run: scripts/qlever.sh "$(cat queries/class_edges_p31.rq)" tsv 900 data/qlever2/class_edges_p31.tsv
+SELECT DISTINCT ?c ?p WHERE {
+  { SELECT DISTINCT ?t WHERE {
+      ?art schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> .
+      ?item wdt:P31 ?t . } }
+  ?t wdt:P279* ?c .
+  ?c wdt:P279 ?p .
+}

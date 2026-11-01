@@ -1,0 +1,47 @@
+kind,name,target,expected_label,note
+class,wm:WikimediaPage,schema:Thing,,Wikimedia-internal pages that are English articles (disambiguation pages and lists and templates)
+class,wm:Name,schema:Intangible,,personal and family names
+class,wm:Concept,schema:Intangible,,abstract concepts and fields of study and theorems
+class,wm:TopicAspect,schema:Intangible,,Politics-of-X style aspect items
+class,schema:Occupation,schema:Intangible,,positions and professions and titles
+class,wm:PopulationGroup,schema:Intangible,,ethnic and other population groups
+class,wm:TimePeriod,schema:Intangible,,years and other time intervals
+class,schema:BioChemEntity,schema:Thing,,genes and chemical entities and enzymes and minerals
+class,wm:IndividualAnimal,schema:Thing,,named individual animals
+map,Q17379835,wm:WikimediaPage,Wikimedia page outside the main knowledge tree,root of the Wikimedia-internal classes
+map,Q2221906,schema:Place,geographic location,YAGO leaves Place itself unmapped
+map,Q839954,schema:Place,archaeological site,
+map,Q82799,wm:Name,name,covers family names and given names
+map,Q24034552,wm:Concept,mathematical concept,
+map,Q108163,wm:Concept,proposition,parent of theorem
+map,Q1047113,wm:Concept,field of study,parent of academic discipline
+map,Q21040055,wm:TopicAspect,aspect,covers aspect of history and aspect in a geographic region
+map,Q4164871,schema:Occupation,position,covers public office
+map,Q28640,schema:Occupation,profession,
+map,Q216353,schema:Occupation,title,covers noble title
+map,Q851990,wm:PopulationGroup,population group,covers ethnic group
+map,Q186081,wm:TimePeriod,time interval,covers year
+map,Q7187,schema:BioChemEntity,gene,
+map,Q113145171,schema:BioChemEntity,type of chemical entity,
+map,Q47154513,schema:BioChemEntity,structural class of chemical entities,
+map,Q59199015,schema:BioChemEntity,group of stereoisomers,
+map,Q12089225,schema:BioChemEntity,mineral species,
+map,Q67015883,schema:BioChemEntity,group or class of enzymes,
+map,Q726,wm:IndividualAnimal,horse,individual racehorses and similar
+map,Q26401003,wm:IndividualAnimal,individual animal,
+map,Q18127,schema:Corporation,record label,
+map,Q2001305,schema:Organization,television channel,
+map,Q3329375,schema:Language,language variety,covers dialect
+map,Q17376908,schema:Language,languoid,covers language family
+map,Q188451,schema:Intangible,music genre,
+map,Q107357104,schema:Intangible,type of dance,
+unmap,Q386724,schema:CreativeWork,work,YAGO anchors this very broad class to CreativeWork; it swallowed ships and buildings
+map,Q15621286,schema:CreativeWork,intellectual work,
+map,Q17489659,schema:CreativeWork,group of works,
+map,Q115668308,schema:CreativeWork,release,
+map,Q2334719,schema:CreativeWork,legal case,
+map,Q8205328,schema:Product,artificial physical object,
+map,Q10929058,schema:Product,product model,
+map,Q135368721,schema:Product,group of products,
+map,Q11460,schema:Product,clothing,
+map,Q13226383,yago:HumanMadeGeographicalEntity,facility,

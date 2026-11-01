@@ -1,0 +1,572 @@
+{
+ "determinism": {
+  "classes": {
+   "rows": 126274,
+   "only_in_a": 0,
+   "only_in_b": 0
+  },
+  "edges": {
+   "rows": 188929,
+   "only_in_a": 0,
+   "only_in_b": 0
+  },
+  "article_type": {
+   "rows": 7243673,
+   "only_in_a": 0,
+   "only_in_b": 0
+  }
+ },
+ "vital_topic_vs_type": {
+  "articles": 49649,
+  "nmi": 0.5036,
+  "by_topic": {
+   "Arts": {
+    "n": 3820,
+    "top": [
+     [
+      "schema:CreativeWork",
+      0.532
+     ],
+     [
+      "schema:Intangible",
+      0.133
+     ],
+     [
+      "wm:Unclassified",
+      0.111
+     ]
+    ]
+   },
+   "Biology and health sciences": {
+    "n": 5689,
+    "top": [
+     [
+      "schema:Taxon",
+      0.524
+     ],
+     [
+      "wm:Unclassified",
+      0.253
+     ],
+     [
+      "schema:Event",
+      0.092
+     ]
+    ]
+   },
+   "Everyday life": {
+    "n": 2445,
+    "top": [
+     [
+      "schema:Product",
+      0.343
+     ],
+     [
+      "schema:Event",
+      0.204
+     ],
+     [
+      "wm:Unclassified",
+      0.19
+     ]
+    ]
+   },
+   "Geography": {
+    "n": 5177,
+    "top": [
+     [
+      "schema:Place",
+      0.877
+     ],
+     [
+      "schema:Organization",
+      0.087
+     ],
+     [
+      "schema:Intangible",
+      0.014
+     ]
+    ]
+   },
+   "History": {
+    "n": 3250,
+    "top": [
+     [
+      "schema:Event",
+      0.442
+     ],
+     [
+      "schema:Intangible",
+      0.227
+     ],
+     [
+      "schema:Place",
+      0.202
+     ]
+    ]
+   },
+   "Mathematics": {
+    "n": 1201,
+    "top": [
+     [
+      "schema:Intangible",
+      0.787
+     ],
+     [
+      "wm:Unclassified",
+      0.115
+     ],
+     [
+      "schema:CreativeWork",
+      0.049
+     ]
+    ]
+   },
+   "People": {
+    "n": 14168,
+    "top": [
+     [
+      "schema:Person",
+      0.974
+     ],
+     [
+      "schema:Organization",
+      0.021
+     ],
+     [
+      "yago:FictionalEntity",
+      0.003
+     ]
+    ]
+   },
+   "Philosophy and religion": {
+    "n": 1553,
+    "top": [
+     [
+      "yago:FictionalEntity",
+      0.232
+     ],
+     [
+      "wm:Unclassified",
+      0.213
+     ],
+     [
+      "schema:Event",
+      0.2
+     ]
+    ]
+   },
+   "Physical sciences": {
+    "n": 4681,
+    "top": [
+     [
+      "wm:Unclassified",
+      0.319
+     ],
+     [
+      "schema:Intangible",
+      0.185
+     ],
+     [
+      "schema:Event",
+      0.16
+     ]
+    ]
+   },
+   "Society and social sciences": {
+    "n": 4394,
+    "top": [
+     [
+      "wm:Unclassified",
+      0.243
+     ],
+     [
+      "schema:Intangible",
+      0.229
+     ],
+     [
+      "schema:Event",
+      0.217
+     ]
+    ]
+   },
+   "Technology": {
+    "n": 3271,
+    "top": [
+     [
+      "schema:Product",
+      0.373
+     ],
+     [
+      "wm:Unclassified",
+      0.253
+     ],
+     [
+      "schema:Event",
+      0.139
+     ]
+    ]
+   }
+  },
+  "by_top_class": {
+   "yago:FictionalEntity": {
+    "n": 575,
+    "top": [
+     [
+      "Philosophy and religion",
+      0.628
+     ],
+     [
+      "Arts",
+      0.259
+     ],
+     [
+      "People",
+      0.066
+     ]
+    ]
+   },
+   "wm:WikimediaPage": {
+    "n": 69,
+    "top": [
+     [
+      "Society and social sciences",
+      0.188
+     ],
+     [
+      "Physical sciences",
+      0.188
+     ],
+     [
+      "History",
+      0.145
+     ]
+    ]
+   },
+   "wm:Unclassified": {
+    "n": 6367,
+    "top": [
+     [
+      "Physical sciences",
+      0.234
+     ],
+     [
+      "Biology and health sciences",
+      0.226
+     ],
+     [
+      "Society and social sciences",
+      0.167
+     ]
+    ]
+   },
+   "wm:IndividualAnimal": {
+    "n": 12,
+    "top": [
+     [
+      "Biology and health sciences",
+      0.917
+     ],
+     [
+      "Technology",
+      0.083
+     ]
+    ]
+   },
+   "schema:Taxon": {
+    "n": 2983,
+    "top": [
+     [
+      "Biology and health sciences",
+      0.999
+     ],
+     [
+      "Everyday life",
+      0.001
+     ],
+     [
+      "Technology",
+      0.0
+     ]
+    ]
+   },
+   "schema:Product": {
+    "n": 2898,
+    "top": [
+     [
+      "Technology",
+      0.421
+     ],
+     [
+      "Everyday life",
+      0.289
+     ],
+     [
+      "Biology and health sciences",
+      0.101
+     ]
+    ]
+   },
+   "schema:Place": {
+    "n": 6484,
+    "top": [
+     [
+      "Geography",
+      0.7
+     ],
+     [
+      "Physical sciences",
+      0.103
+     ],
+     [
+      "History",
+      0.101
+     ]
+    ]
+   },
+   "schema:Person": {
+    "n": 13847,
+    "top": [
+     [
+      "People",
+      0.997
+     ],
+     [
+      "Philosophy and religion",
+      0.001
+     ],
+     [
+      "Society and social sciences",
+      0.001
+     ]
+    ]
+   },
+   "schema:Organization": {
+    "n": 2227,
+    "top": [
+     [
+      "Society and social sciences",
+      0.383
+     ],
+     [
+      "Geography",
+      0.201
+     ],
+     [
+      "People",
+      0.136
+     ]
+    ]
+   },
+   "schema:Intangible": {
+    "n": 4994,
+    "top": [
+     [
+      "Society and social sciences",
+      0.202
+     ],
+     [
+      "Mathematics",
+      0.189
+     ],
+     [
+      "Physical sciences",
+      0.173
+     ]
+    ]
+   },
+   "schema:Event": {
+    "n": 5200,
+    "top": [
+     [
+      "History",
+      0.276
+     ],
+     [
+      "Society and social sciences",
+      0.183
+     ],
+     [
+      "Physical sciences",
+      0.144
+     ]
+    ]
+   },
+   "schema:CreativeWork": {
+    "n": 3286,
+    "top": [
+     [
+      "Arts",
+      0.619
+     ],
+     [
+      "Everyday life",
+      0.097
+     ],
+     [
+      "Society and social sciences",
+      0.091
+     ]
+    ]
+   },
+   "schema:BioChemEntity": {
+    "n": 707,
+    "top": [
+     [
+      "Physical sciences",
+      0.744
+     ],
+     [
+      "Biology and health sciences",
+      0.245
+     ],
+     [
+      "Technology",
+      0.01
+     ]
+    ]
+   }
+  }
+ },
+ "display_depth": {
+  "articles": 7012970,
+  "mean": 3.67,
+  "median": 4.0,
+  "p90": 6.0,
+  "max": 16,
+  "distinct_classes_shown": 6892
+ },
+ "primary_depth": {
+  "mean": 3.73,
+  "median": 4.0,
+  "p90": 6.0,
+  "max": 22
+ },
+ "largest_shown_classes": [
+  [
+   "schema:Person",
+   "schema:Person",
+   2123533
+  ],
+  [
+   "human",
+   "Q5",
+   2120700
+  ],
+  [
+   "schema:Place",
+   "schema:Place",
+   1189826
+  ],
+  [
+   "schema:CreativeWork",
+   "schema:CreativeWork",
+   791770
+  ],
+  [
+   "schema:Organization",
+   "schema:Organization",
+   662529
+  ],
+  [
+   "schema:AdministrativeArea",
+   "schema:AdministrativeArea",
+   601247
+  ],
+  [
+   "wm:WikimediaPage",
+   "wm:WikimediaPage",
+   598379
+  ],
+  [
+   "Wikimedia page outside the main knowledge tree",
+   "Q17379835",
+   598379
+  ],
+  [
+   "Wikimedia internal item",
+   "Q17442446",
+   598165
+  ],
+  [
+   "schema:Event",
+   "schema:Event",
+   561931
+  ],
+  [
+   "schema:Taxon",
+   "schema:Taxon",
+   505822
+  ],
+  [
+   "taxon",
+   "Q16521",
+   505822
+  ],
+  [
+   "organization",
+   "Q43229",
+   410646
+  ],
+  [
+   "Wikimedia disambiguation page",
+   "Q4167410",
+   408553
+  ],
+  [
+   "event",
+   "Q1656682",
+   369826
+  ],
+  [
+   "human settlement",
+   "Q486972",
+   360535
+  ],
+  [
+   "yago:HumanMadeGeographicalEntity",
+   "yago:HumanMadeGeographicalEntity",
+   266396
+  ],
+  [
+   "schema:MusicComposition",
+   "schema:MusicComposition",
+   252008
+  ],
+  [
+   "musical work",
+   "Q2188189",
+   251829
+  ],
+  [
+   "competition",
+   "Q841654",
+   230036
+  ],
+  [
+   "sports competition",
+   "Q13406554",
+   228718
+  ],
+  [
+   "administrative territorial entity",
+   "Q56061",
+   227870
+  ],
+  [
+   "schema:Intangible",
+   "schema:Intangible",
+   223007
+  ],
+  [
+   "song, audio track, or release group",
+   "Q140007694",
+   204902
+  ],
+  [
+   "release group",
+   "Q108346082",
+   201934
+  ]
+ ]
+}

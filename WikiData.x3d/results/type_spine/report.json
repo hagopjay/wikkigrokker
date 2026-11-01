@@ -1,0 +1,143 @@
+{
+ "seconds": {
+  "articles": 9.9,
+  "graph": 11.5,
+  "scaffold": 17.0,
+  "reach": 30.9,
+  "primary": 31.5,
+  "articles_out": 36.6
+ },
+ "articles_total": 7249474,
+ "articles_with_item": 7243673,
+ "cycles": {
+  "components": 7,
+  "classes_merged": 19,
+  "largest": 6
+ },
+ "addenda_label_warnings": [],
+ "scaffold": {
+  "classes": 50,
+  "anchors": 98,
+  "mapped_qids_not_in_graph": 1
+ },
+ "two_source_edges": 14994,
+ "classes": 126224,
+ "scaffold_nodes": 50,
+ "tree_nodes": 126274,
+ "max_depth": 24,
+ "articles_typed": 7012970,
+ "typed_via_P31": 6909609,
+ "typed_via_P279_only": 103361,
+ "untyped_with_item": 230703,
+ "articles_with_primary_type_share": 0.9674,
+ "articles_under_scaffold": 6925840,
+ "articles_under_unclassified": 87130,
+ "primary_rule_counts": {
+  "larger count": 14670,
+  "only parent": 81551,
+  "scaffold edge": 98,
+  "root": 4947,
+  "closer to scaffold root": 23602,
+  "lowest id": 1277,
+  "two sources": 79
+ },
+ "alternate_edges": 62656,
+ "classes_folded": 119132,
+ "classes_shown": 7142,
+ "additivity_holds": true,
+ "root_primary_count": 7012970,
+ "top_level": [
+  [
+   "schema:Person",
+   "schema:Person",
+   2123533
+  ],
+  [
+   "schema:Place",
+   "schema:Place",
+   1189826
+  ],
+  [
+   "schema:CreativeWork",
+   "schema:CreativeWork",
+   791770
+  ],
+  [
+   "schema:Organization",
+   "schema:Organization",
+   662529
+  ],
+  [
+   "wm:WikimediaPage",
+   "wm:WikimediaPage",
+   598379
+  ],
+  [
+   "schema:Event",
+   "schema:Event",
+   561931
+  ],
+  [
+   "schema:Taxon",
+   "schema:Taxon",
+   505822
+  ],
+  [
+   "schema:Intangible",
+   "schema:Intangible",
+   223007
+  ],
+  [
+   "schema:Product",
+   "schema:Product",
+   191708
+  ],
+  [
+   "wm:Unclassified",
+   "wm:Unclassified",
+   87130
+  ],
+  [
+   "schema:BioChemEntity",
+   "schema:BioChemEntity",
+   44194
+  ],
+  [
+   "yago:FictionalEntity",
+   "yago:FictionalEntity",
+   25957
+  ],
+  [
+   "wm:IndividualAnimal",
+   "wm:IndividualAnimal",
+   7184
+  ]
+ ],
+ "depth_histogram": {
+  "0": 1,
+  "1": 13,
+  "2": 5012,
+  "3": 3059,
+  "4": 12311,
+  "5": 22910,
+  "6": 23059,
+  "7": 16967,
+  "8": 10373,
+  "9": 8304,
+  "10": 6456,
+  "11": 4786,
+  "12": 4822,
+  "13": 2294,
+  "14": 1630,
+  "15": 1357,
+  "16": 1092,
+  "17": 675,
+  "18": 531,
+  "19": 345,
+  "20": 129,
+  "21": 88,
+  "22": 48,
+  "23": 9,
+  "24": 3
+ }
+}

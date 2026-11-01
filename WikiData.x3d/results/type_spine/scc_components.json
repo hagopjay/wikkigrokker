@@ -1,0 +1,63 @@
+[
+ {
+  "size": 6,
+  "representative": "Q10683158 substance",
+  "members": [
+   "Q35758 matter",
+   "Q6005984 baryonic matter",
+   "Q10547012 common matter",
+   "Q10683158 substance",
+   "Q28555911 ordinary matter",
+   "Q28732711 physical substance"
+  ]
+ },
+ {
+  "size": 3,
+  "representative": "Q2095 food",
+  "members": [
+   "Q2095 food",
+   "Q118451828 food and beverage",
+   "Q141446099 food material component"
+  ]
+ },
+ {
+  "size": 2,
+  "representative": "Q366 corruption",
+  "members": [
+   "Q366 corruption",
+   "Q1975478 abuse of power"
+  ]
+ },
+ {
+  "size": 2,
+  "representative": "Q4588528 sacred place",
+  "members": [
+   "Q4588528 sacred place",
+   "Q123144667 halidom"
+  ]
+ },
+ {
+  "size": 2,
+  "representative": "Q70013597 health occupation school",
+  "members": [
+   "Q70013597 health occupation school",
+   "Q141027297 medical education institution"
+  ]
+ },
+ {
+  "size": 2,
+  "representative": "Q720230 rojak",
+  "members": [
+   "Q720230 rojak",
+   "Q7418601 rujak cingur"
+  ]
+ },
+ {
+  "size": 2,
+  "representative": "Q115019248 GNSS jamming",
+  "members": [
+   "Q115019248 GNSS jamming",
+   "Q141507841 (no English label) Q141507841"
+  ]
+ }
+]
