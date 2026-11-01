@@ -1,0 +1,166 @@
+{
+ "vital_titles": 49872,
+ "resolved_to_page": 49872,
+ "followed_redirect": 3,
+ "unresolved": 0,
+ "distinct_pages": 49870,
+ "with_qid": 49868,
+ "with_p31_type": 43246,
+ "distinct_types_used": 7987,
+ "with_visible_category": 49872,
+ "distinct_visible_categories": 215277,
+ "distinct_hidden_categories": 12676,
+ "visible_cats_per_article": {
+  "mean": 11.92,
+  "median": 7.0,
+  "p90": 28.0,
+  "max": 233
+ },
+ "unresolved_titles": [],
+ "no_qid_titles": [
+  "FireWire",
+  "International Workers' Day",
+  "Mossi Kingdoms",
+  "University and college sport"
+ ],
+ "by_level": [
+  [
+   1,
+   10,
+   10,
+   10,
+   9,
+   10
+  ],
+  [
+   2,
+   90,
+   90,
+   90,
+   77,
+   90
+  ],
+  [
+   3,
+   902,
+   902,
+   902,
+   780,
+   902
+  ],
+  [
+   4,
+   9026,
+   9026,
+   9026,
+   7928,
+   9026
+  ],
+  [
+   5,
+   39844,
+   39844,
+   39840,
+   34452,
+   39844
+  ]
+ ],
+ "by_topic": [
+  [
+   "People",
+   14168,
+   14168,
+   14168,
+   14168,
+   24.2
+  ],
+  [
+   "Biology and health sciences",
+   5705,
+   5705,
+   5130,
+   5705,
+   5.7
+  ],
+  [
+   "Geography",
+   5184,
+   5184,
+   5103,
+   5184,
+   7.4
+  ],
+  [
+   "Physical sciences",
+   4763,
+   4763,
+   3104,
+   4763,
+   4.2
+  ],
+  [
+   "Society and social sciences",
+   4415,
+   4414,
+   3471,
+   4415,
+   7.2
+  ],
+  [
+   "Arts",
+   3822,
+   3822,
+   3660,
+   3822,
+   12.7
+  ],
+  [
+   "Technology",
+   3305,
+   3304,
+   1923,
+   3305,
+   5.0
+  ],
+  [
+   "History",
+   3267,
+   3266,
+   3149,
+   3267,
+   10.7
+  ],
+  [
+   "Everyday life",
+   2463,
+   2462,
+   1533,
+   2463,
+   6.2
+  ],
+  [
+   "Philosophy and religion",
+   1564,
+   1564,
+   1285,
+   1564,
+   6.4
+  ],
+  [
+   "Mathematics",
+   1212,
+   1212,
+   716,
+   1212,
+   3.0
+  ],
+  [
+   "(none)",
+   4,
+   4,
+   4,
+   4,
+   27.5
+  ]
+ ]
+}

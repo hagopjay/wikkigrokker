@@ -1,0 +1,5 @@
+# Direct subclass-of (P279) parents for a batch of Wikidata items.
+# Used for Vital Articles whose item has no P31 type (6,622 items, two batches of up to 3,400).
+# Replace {ITEMS} with space-separated wd:Q-ids and run with: scripts/qlever.sh "$(cat FILE.rq)" tsv 300 OUT.tsv
+# (qlever.sh adds the wd:, wdt:, schema:, rdfs: and wikibase: prefixes itself.)
+SELECT ?item ?p WHERE { VALUES ?item { {ITEMS} } ?item wdt:P279 ?p . }

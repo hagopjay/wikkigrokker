@@ -1,0 +1,480 @@
+{
+ "seconds": {
+  "nodes": 3.6,
+  "edges": 16.2,
+  "scc_all": 19.3,
+  "scc_visible": 20.6,
+  "bfs_main": 21.7,
+  "nodes_parquet": 26.5,
+  "lt14": 29.7,
+  "coverage": 54.8
+ },
+ "nodes": {
+  "all": 2648976,
+  "hidden": 92852,
+  "visible": 2556124,
+  "empty_visible": 171260
+ },
+ "subcat_links_in_dump": 10055309,
+ "edges": {
+  "subcat_links": 10055309,
+  "distinct_edges": 10055309,
+  "self_loops": 4
+ },
+ "graph_all": {
+  "nodes": 2648976,
+  "edges": 10055305,
+  "roots_without_parent": 701,
+  "leaves_without_child": 1452853,
+  "with_2plus_parents": 2376878,
+  "parents_per_node": {
+   "mean": 3.8,
+   "median": 3.0,
+   "p90": 7.0,
+   "max": 202
+  },
+  "children_per_node_max": 773604,
+  "scc_count_nontrivial": 176,
+  "nodes_in_cycles": 775,
+  "largest_scc": 88,
+  "top_scc_sizes": [
+   88,
+   32,
+   22,
+   20,
+   19,
+   17,
+   11,
+   10,
+   10,
+   10
+  ]
+ },
+ "graph_visible": {
+  "nodes": 2556124,
+  "edges": 6928135,
+  "roots_without_parent": 167797,
+  "leaves_without_child": 1373280,
+  "with_2plus_parents": 2164286,
+  "parents_per_node": {
+   "mean": 2.9,
+   "median": 3.0,
+   "p90": 4.0,
+   "max": 202
+  },
+  "children_per_node_max": 25148,
+  "scc_count_nontrivial": 174,
+  "nodes_in_cycles": 685,
+  "largest_scc": 32,
+  "top_scc_sizes": [
+   32,
+   22,
+   20,
+   19,
+   17,
+   11,
+   10,
+   10,
+   10,
+   9
+  ]
+ },
+ "special_nodes": {
+  "Main_topic_classifications": 138595,
+  "Contents": 74373,
+  "Fundamental_categories": null,
+  "Articles": 42950,
+  "Hidden_categories": 112874
+ },
+ "main_topic_tree": {
+  "reached_visible_categories": 2283498,
+  "share_of_visible": 0.8933,
+  "depth_histogram": {
+   "0": 1,
+   "1": 34,
+   "2": 926,
+   "3": 10712,
+   "4": 71231,
+   "5": 268773,
+   "6": 545250,
+   "7": 753789,
+   "8": 451959,
+   "9": 133175,
+   "10": 28994,
+   "11": 5504,
+   "12": 4079,
+   "13": 2867,
+   "14": 1834,
+   "15": 793,
+   "16": 1357,
+   "17": 1107,
+   "18": 951,
+   "19": 147,
+   "20": 15
+  },
+  "max_depth": 20,
+  "direct_children": 34
+ },
+ "contents_tree": {
+  "reached_visible_categories": 2387936
+ },
+ "scc_examples": [
+  {
+   "size": 32,
+   "examples": [
+    "Hungarian nobility",
+    "People from Austria-Hungary",
+    "Hungarian noble families",
+    "People from the Austrian Empire",
+    "People from the Habsburg monarchy",
+    "Kings of Hungary",
+    "Austrian Empire",
+    "House of Habsburg",
+    "Bohemian noble families",
+    "Czech nobility"
+   ]
+  },
+  {
+   "size": 22,
+   "examples": [
+    "Hebrew Bible places",
+    "Ancient Israel and Judah",
+    "Hebrew language",
+    "Hebrew Bible nations",
+    "Hebrew-language literature",
+    "Land of Israel",
+    "Torah",
+    "Hebrew Bible geography",
+    "Canaan",
+    "Ancient Hebrew texts"
+   ]
+  },
+  {
+   "size": 20,
+   "examples": [
+    "Communist Party of the Soviet Union members",
+    "Anti-revisionist organizations",
+    "Comintern sections",
+    "Marxism–Leninism",
+    "Vladimir Lenin",
+    "Party leaders of the Soviet Union",
+    "Ideology of the Communist Party of the Soviet Union",
+    "Leninism",
+    "Communist Party of the Soviet Union",
+    "Comintern organizations"
+   ]
+  },
+  {
+   "size": 19,
+   "examples": [
+    "German communists",
+    "Marxism",
+    "German anti-fascists",
+    "Marxists by nationality",
+    "Nazism",
+    "German Marxists",
+    "Anti-fascism",
+    "Anti-Marxism",
+    "Anti-fascists by nationality",
+    "European Marxists"
+   ]
+  }
+ ],
+ "main_topic_children": [
+  [
+   "Government",
+   120,
+   71
+  ],
+  [
+   "Communication",
+   117,
+   10
+  ],
+  [
+   "Mass media",
+   112,
+   48
+  ],
+  [
+   "Time",
+   104,
+   44
+  ],
+  [
+   "Culture",
+   96,
+   50
+  ],
+  [
+   "Language",
+   91,
+   33
+  ],
+  [
+   "Technology",
+   86,
+   43
+  ],
+  [
+   "Humanities",
+   79,
+   37
+  ],
+  [
+   "Society",
+   76,
+   52
+  ],
+  [
+   "Academic disciplines",
+   75,
+   17
+  ],
+  [
+   "Energy",
+   73,
+   30
+  ],
+  [
+   "Education",
+   70,
+   48
+  ],
+  [
+   "Information",
+   70,
+   29
+  ],
+  [
+   "Knowledge",
+   68,
+   14
+  ],
+  [
+   "Health",
+   66,
+   36
+  ],
+  [
+   "Engineering",
+   64,
+   22
+  ],
+  [
+   "Geography",
+   61,
+   32
+  ],
+  [
+   "Food and drink",
+   57,
+   44
+  ],
+  [
+   "Behavior",
+   53,
+   13
+  ],
+  [
+   "History",
+   48,
+   29
+  ],
+  [
+   "Humans",
+   44,
+   25
+  ],
+  [
+   "Science",
+   44,
+   33
+  ],
+  [
+   "Politics",
+   41,
+   38
+  ],
+  [
+   "Lists",
+   35,
+   33
+  ],
+  [
+   "Mathematics",
+   33,
+   26
+  ],
+  [
+   "Main topic articles",
+   33,
+   0
+  ],
+  [
+   "Religion",
+   32,
+   27
+  ],
+  [
+   "Law",
+   26,
+   21
+  ],
+  [
+   "Life",
+   25,
+   17
+  ],
+  [
+   "Philosophy",
+   25,
+   14
+  ],
+  [
+   "Economy",
+   24,
+   23
+  ],
+  [
+   "Concepts",
+   16,
+   10
+  ],
+  [
+   "Entities",
+   9,
+   8
+  ],
+  [
+   "Universe",
+   6,
+   4
+  ]
+ ],
+ "largest_roots": [
+  [
+   "Possibly free images",
+   10292,
+   1
+  ],
+  [
+   "Educational institution disambiguation pages",
+   4121,
+   1
+  ],
+  [
+   "User soft redirects",
+   3660,
+   0
+  ],
+  [
+   "Non-free files with non-commercial licenses",
+   2465,
+   4
+  ],
+  [
+   "Bats task force articles",
+   2394,
+   2
+  ],
+  [
+   "Wikipedia user talk pages of shared IP addresses from government agencies or facilities",
+   2275,
+   0
+  ],
+  [
+   "Wikipedia soft redirected project pages",
+   979,
+   0
+  ],
+  [
+   "Non-free files with no derivative works licenses",
+   844,
+   1
+  ],
+  [
+   "Non-English book cover images",
+   827,
+   3
+  ],
+  [
+   "Plant common name disambiguation pages",
+   644,
+   0
+  ],
+  [
+   "Charmed episode redirects to lists",
+   587,
+   0
+  ],
+  [
+   "Images in lossless format with lossy compression artifacts",
+   572,
+   0
+  ],
+  [
+   "All orphaned non-free use Wikipedia files",
+   560,
+   0
+  ],
+  [
+   "Wikipedia former featured lists",
+   479,
+   1
+  ],
+  [
+   "Articles needing translation from foreign-language Wikipedias",
+   221,
+   201
+  ]
+ ],
+ "article_coverage": {
+  "articles": 7249474,
+  "no_category_at_all": 30,
+  "only_hidden_categories": 200,
+  "with_visible_category": 7249244,
+  "under_main_topic_tree": 6965931,
+  "visible_but_outside_main_topic_tree": 283313,
+  "visible_categories_per_article": {
+   "mean": 6.3,
+   "median": 5.0,
+   "p90": 13.0,
+   "max": 247
+  },
+  "min_depth_cumulative": {
+   "2": 33203,
+   "3": 375675,
+   "4": 2398212,
+   "5": 4566339,
+   "6": 5874274,
+   "8": 6839492,
+   "10": 6950948,
+   "12": 6963011,
+   "15": 6965281,
+   "20": 6965931,
+   "30": 6965931
+  },
+  "min_depth_histogram": {
+   "1": 910,
+   "2": 32293,
+   "3": 342472,
+   "4": 2022537,
+   "5": 2168127,
+   "6": 1307935,
+   "7": 748254,
+   "8": 216964,
+   "9": 97570,
+   "10": 13886,
+   "11": 7001,
+   "12": 5062,
+   "13": 1899,
+   "14": 195,
+   "15": 176,
+   "16": 306,
+   "17": 153,
+   "18": 186,
+   "19": 5
+  }
+ }
+}

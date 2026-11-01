@@ -1,0 +1,179 @@
+{
+ "articles": 49866,
+ "majority_class": {
+  "topic": "People",
+  "share": 0.2841
+ },
+ "overall": {
+  "articles": 49866,
+  "with_prediction": 48775,
+  "coverage": 0.9781,
+  "accuracy_among_predicted": 0.9246,
+  "accuracy_over_all": 0.9043
+ },
+ "level_1": {
+  "articles": 10,
+  "with_prediction": 10,
+  "coverage": 1.0,
+  "accuracy_among_predicted": 0.5,
+  "accuracy_over_all": 0.5
+ },
+ "level_2": {
+  "articles": 90,
+  "with_prediction": 84,
+  "coverage": 0.9333,
+  "accuracy_among_predicted": 0.8095,
+  "accuracy_over_all": 0.7556
+ },
+ "level_3": {
+  "articles": 902,
+  "with_prediction": 893,
+  "coverage": 0.99,
+  "accuracy_among_predicted": 0.8869,
+  "accuracy_over_all": 0.878
+ },
+ "level_4": {
+  "articles": 9026,
+  "with_prediction": 8868,
+  "coverage": 0.9825,
+  "accuracy_among_predicted": 0.9222,
+  "accuracy_over_all": 0.906
+ },
+ "level_5": {
+  "articles": 39838,
+  "with_prediction": 38920,
+  "coverage": 0.977,
+  "accuracy_among_predicted": 0.9263,
+  "accuracy_over_all": 0.905
+ },
+ "by_topic": {
+  "Arts": {
+   "articles": 3822,
+   "coverage": 0.967,
+   "recall_over_all": 0.8749,
+   "accuracy_among_predicted": 0.9048
+  },
+  "Biology and health sciences": {
+   "articles": 5704,
+   "coverage": 0.976,
+   "recall_over_all": 0.93,
+   "accuracy_among_predicted": 0.9529
+  },
+  "Everyday life": {
+   "articles": 2463,
+   "coverage": 0.9683,
+   "recall_over_all": 0.7974,
+   "accuracy_among_predicted": 0.8235
+  },
+  "Geography": {
+   "articles": 5184,
+   "coverage": 0.9697,
+   "recall_over_all": 0.9348,
+   "accuracy_among_predicted": 0.964
+  },
+  "History": {
+   "articles": 3267,
+   "coverage": 0.948,
+   "recall_over_all": 0.772,
+   "accuracy_among_predicted": 0.8143
+  },
+  "Mathematics": {
+   "articles": 1212,
+   "coverage": 0.9736,
+   "recall_over_all": 0.8729,
+   "accuracy_among_predicted": 0.8966
+  },
+  "People": {
+   "articles": 14167,
+   "coverage": 0.9996,
+   "recall_over_all": 0.9978,
+   "accuracy_among_predicted": 0.9982
+  },
+  "Philosophy and religion": {
+   "articles": 1564,
+   "coverage": 0.9731,
+   "recall_over_all": 0.7922,
+   "accuracy_among_predicted": 0.8141
+  },
+  "Physical sciences": {
+   "articles": 4763,
+   "coverage": 0.9876,
+   "recall_over_all": 0.9349,
+   "accuracy_among_predicted": 0.9466
+  },
+  "Society and social sciences": {
+   "articles": 4415,
+   "coverage": 0.9649,
+   "recall_over_all": 0.8224,
+   "accuracy_among_predicted": 0.8523
+  },
+  "Technology": {
+   "articles": 3305,
+   "coverage": 0.961,
+   "recall_over_all": 0.7861,
+   "accuracy_among_predicted": 0.818
+  }
+ },
+ "top_confusions": [
+  [
+   "Technology",
+   "Physical sciences",
+   173
+  ],
+  [
+   "Everyday life",
+   "Technology",
+   148
+  ],
+  [
+   "History",
+   "Geography",
+   130
+  ],
+  [
+   "History",
+   "People",
+   123
+  ],
+  [
+   "History",
+   "Society and social sciences",
+   120
+  ],
+  [
+   "Technology",
+   "Biology and health sciences",
+   107
+  ],
+  [
+   "Society and social sciences",
+   "Technology",
+   106
+  ],
+  [
+   "Physical sciences",
+   "Technology",
+   105
+  ],
+  [
+   "Society and social sciences",
+   "History",
+   104
+  ],
+  [
+   "Philosophy and religion",
+   "Society and social sciences",
+   102
+  ],
+  [
+   "Technology",
+   "Society and social sciences",
+   101
+  ],
+  [
+   "Society and social sciences",
+   "Arts",
+   99
+  ]
+ ]
+}

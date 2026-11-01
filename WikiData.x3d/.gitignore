@@ -1,0 +1,6 @@
+data/
+out/
+*.parquet
+*.duckdb
+tmp/
+__pycache__/

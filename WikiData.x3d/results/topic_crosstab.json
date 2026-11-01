@@ -1,0 +1,2125 @@
+{
+ "articles": 49872,
+ "top_level_topics": [
+  "Academic disciplines",
+  "Behavior",
+  "Communication",
+  "Concepts",
+  "Culture",
+  "Economy",
+  "Education",
+  "Energy",
+  "Engineering",
+  "Entities",
+  "Food and drink",
+  "Geography",
+  "Government",
+  "Health",
+  "History",
+  "Humanities",
+  "Humans",
+  "Information",
+  "Knowledge",
+  "Language",
+  "Law",
+  "Life",
+  "Lists",
+  "Main topic articles",
+  "Mass media",
+  "Mathematics",
+  "Philosophy",
+  "Politics",
+  "Religion",
+  "Science",
+  "Society",
+  "Technology",
+  "Time",
+  "Universe"
+ ],
+ "vital_topics": [
+  "(none)",
+  "Arts",
+  "Biology and health sciences",
+  "Everyday life",
+  "Geography",
+  "History",
+  "Mathematics",
+  "People",
+  "Philosophy and religion",
+  "Physical sciences",
+  "Society and social sciences",
+  "Technology"
+ ],
+ "methods": {
+  "share": {
+   "all": {
+    "articles": 49872,
+    "nmi": 0.1127,
+    "vital_given_category": 0.2883,
+    "category_given_vital": 0.9313
+   },
+   "level_le_3": {
+    "articles": 1002,
+    "nmi": 0.0836,
+    "vital_given_category": 0.1717,
+    "category_given_vital": 0.9581
+   },
+   "level_le_4": {
+    "articles": 10028,
+    "nmi": 0.0588,
+    "vital_given_category": 0.1987,
+    "category_given_vital": 0.9751
+   },
+   "share_per_top": {
+    "Academic disciplines": 46446,
+    "Humans": 3143,
+    "Food and drink": 114,
+    "Behavior": 103,
+    "Concepts": 27,
+    "Communication": 14,
+    "Time": 13,
+    "Culture": 6
+   },
+   "by_vital_topic": {
+    "(none)": {
+     "n": 4,
+     "top": [
+      [
+       "Academic disciplines",
+       0.75
+      ],
+      [
+       "Humans",
+       0.25
+      ]
+     ]
+    },
+    "Arts": {
+     "n": 3822,
+     "top": [
+      [
+       "Academic disciplines",
+       0.998
+      ],
+      [
+       "Behavior",
+       0.001
+      ],
+      [
+       "Humans",
+       0.001
+      ],
+      [
+       "Culture",
+       0.001
+      ]
+     ]
+    },
+    "Biology and health sciences": {
+     "n": 5705,
+     "top": [
+      [
+       "Academic disciplines",
+       0.996
+      ],
+      [
+       "Behavior",
+       0.001
+      ],
+      [
+       "Food and drink",
+       0.001
+      ],
+      [
+       "Humans",
+       0.001
+      ]
+     ]
+    },
+    "Everyday life": {
+     "n": 2463,
+     "top": [
+      [
+       "Academic disciplines",
+       0.951
+      ],
+      [
+       "Food and drink",
+       0.043
+      ],
+      [
+       "Humans",
+       0.003
+      ],
+      [
+       "Behavior",
+       0.002
+      ]
+     ]
+    },
+    "Geography": {
+     "n": 5184,
+     "top": [
+      [
+       "Academic disciplines",
+       0.999
+      ],
+      [
+       "Humans",
+       0.0
+      ],
+      [
+       "Time",
+       0.0
+      ]
+     ]
+    },
+    "History": {
+     "n": 3267,
+     "top": [
+      [
+       "Academic disciplines",
+       0.998
+      ],
+      [
+       "Humans",
+       0.002
+      ],
+      [
+       "Behavior",
+       0.0
+      ]
+     ]
+    },
+    "Mathematics": {
+     "n": 1212,
+     "top": [
+      [
+       "Academic disciplines",
+       0.997
+      ],
+      [
+       "Humans",
+       0.002
+      ],
+      [
+       "Concepts",
+       0.001
+      ],
+      [
+       "Time",
+       0.001
+      ]
+     ]
+    },
+    "People": {
+     "n": 14168,
+     "top": [
+      [
+       "Academic disciplines",
+       0.784
+      ],
+      [
+       "Humans",
+       0.216
+      ]
+     ]
+    },
+    "Philosophy and religion": {
+     "n": 1564,
+     "top": [
+      [
+       "Academic disciplines",
+       0.988
+      ],
+      [
+       "Concepts",
+       0.004
+      ],
+      [
+       "Humans",
+       0.003
+      ],
+      [
+       "Entities",
+       0.002
+      ]
+     ]
+    },
+    "Physical sciences": {
+     "n": 4763,
+     "top": [
+      [
+       "Academic disciplines",
+       0.996
+      ],
+      [
+       "Concepts",
+       0.002
+      ],
+      [
+       "Time",
+       0.001
+      ],
+      [
+       "Behavior",
+       0.0
+      ]
+     ]
+    },
+    "Society and social sciences": {
+     "n": 4415,
+     "top": [
+      [
+       "Academic disciplines",
+       0.967
+      ],
+      [
+       "Behavior",
+       0.017
+      ],
+      [
+       "Humans",
+       0.011
+      ],
+      [
+       "Communication",
+       0.002
+      ]
+     ]
+    },
+    "Technology": {
+     "n": 3305,
+     "top": [
+      [
+       "Academic disciplines",
+       0.995
+      ],
+      [
+       "Communication",
+       0.002
+      ],
+      [
+       "Behavior",
+       0.001
+      ],
+      [
+       "Time",
+       0.001
+      ]
+     ]
+    }
+   },
+   "by_category_topic": {
+    "Academic disciplines": {
+     "n": 46446,
+     "top": [
+      [
+       "People",
+       0.239
+      ],
+      [
+       "Biology and health sciences",
+       0.122
+      ],
+      [
+       "Geography",
+       0.112
+      ]
+     ]
+    },
+    "Behavior": {
+     "n": 103,
+     "top": [
+      [
+       "Society and social sciences",
+       0.738
+      ],
+      [
+       "Biology and health sciences",
+       0.078
+      ],
+      [
+       "Everyday life",
+       0.058
+      ]
+     ]
+    },
+    "Communication": {
+     "n": 14,
+     "top": [
+      [
+       "Society and social sciences",
+       0.571
+      ],
+      [
+       "Technology",
+       0.429
+      ]
+     ]
+    },
+    "Concepts": {
+     "n": 27,
+     "top": [
+      [
+       "Physical sciences",
+       0.37
+      ],
+      [
+       "Society and social sciences",
+       0.296
+      ],
+      [
+       "Philosophy and religion",
+       0.259
+      ]
+     ]
+    },
+    "Culture": {
+     "n": 6,
+     "top": [
+      [
+       "Arts",
+       0.333
+      ],
+      [
+       "Society and social sciences",
+       0.333
+      ],
+      [
+       "Philosophy and religion",
+       0.167
+      ]
+     ]
+    },
+    "Entities": {
+     "n": 4,
+     "top": [
+      [
+       "Philosophy and religion",
+       0.75
+      ],
+      [
+       "Physical sciences",
+       0.25
+      ]
+     ]
+    },
+    "Food and drink": {
+     "n": 114,
+     "top": [
+      [
+       "Everyday life",
+       0.93
+      ],
+      [
+       "Biology and health sciences",
+       0.053
+      ],
+      [
+       "Society and social sciences",
+       0.009
+      ]
+     ]
+    },
+    "Humans": {
+     "n": 3143,
+     "top": [
+      [
+       "People",
+       0.975
+      ],
+      [
+       "Society and social sciences",
+       0.015
+      ],
+      [
+       "Everyday life",
+       0.002
+      ]
+     ]
+    },
+    "Life": {
+     "n": 2,
+     "top": [
+      [
+       "Biology and health sciences",
+       1.0
+      ]
+     ]
+    },
+    "Time": {
+     "n": 13,
+     "top": [
+      [
+       "Physical sciences",
+       0.308
+      ],
+      [
+       "Society and social sciences",
+       0.231
+      ],
+      [
+       "Technology",
+       0.231
+      ]
+     ]
+    }
+   }
+  },
+  "nearest": {
+   "all": {
+    "articles": 49872,
+    "nmi": 0.2615,
+    "vital_given_category": 0.4882,
+    "category_given_vital": 0.3274
+   },
+   "level_le_3": {
+    "articles": 1002,
+    "nmi": 0.3606,
+    "vital_given_category": 0.519,
+    "category_given_vital": 0.3024
+   },
+   "level_le_4": {
+    "articles": 10028,
+    "nmi": 0.2586,
+    "vital_given_category": 0.4446,
+    "category_given_vital": 0.2631
+   },
+   "share_per_top": {
+    "Humans": 6698,
+    "Culture": 6616,
+    "Geography": 4359,
+    "History": 3207,
+    "Government": 2606,
+    "Behavior": 1668,
+    "Academic disciplines": 1598,
+    "Humanities": 1552
+   },
+   "by_vital_topic": {
+    "(none)": {
+     "n": 4,
+     "top": [
+      [
+       "Behavior",
+       0.25
+      ],
+      [
+       "Culture",
+       0.25
+      ],
+      [
+       "Humanities",
+       0.25
+      ],
+      [
+       "Humans",
+       0.25
+      ]
+     ]
+    },
+    "Arts": {
+     "n": 3822,
+     "top": [
+      [
+       "Culture",
+       0.333
+      ],
+      [
+       "Humanities",
+       0.162
+      ],
+      [
+       "Mass media",
+       0.109
+      ],
+      [
+       "History",
+       0.041
+      ]
+     ]
+    },
+    "Biology and health sciences": {
+     "n": 5705,
+     "top": [
+      [
+       "Life",
+       0.203
+      ],
+      [
+       "Humans",
+       0.147
+      ],
+      [
+       "Health",
+       0.136
+      ],
+      [
+       "Behavior",
+       0.104
+      ]
+     ]
+    },
+    "Everyday life": {
+     "n": 2463,
+     "top": [
+      [
+       "Culture",
+       0.449
+      ],
+      [
+       "Food and drink",
+       0.231
+      ],
+      [
+       "Behavior",
+       0.065
+      ],
+      [
+       "Humans",
+       0.035
+      ]
+     ]
+    },
+    "Geography": {
+     "n": 5184,
+     "top": [
+      [
+       "Geography",
+       0.651
+      ],
+      [
+       "Culture",
+       0.071
+      ],
+      [
+       "Government",
+       0.053
+      ],
+      [
+       "Economy",
+       0.051
+      ]
+     ]
+    },
+    "History": {
+     "n": 3267,
+     "top": [
+      [
+       "History",
+       0.342
+      ],
+      [
+       "Government",
+       0.149
+      ],
+      [
+       "Culture",
+       0.114
+      ],
+      [
+       "Politics",
+       0.101
+      ]
+     ]
+    },
+    "Mathematics": {
+     "n": 1212,
+     "top": [
+      [
+       "Mathematics",
+       0.704
+      ],
+      [
+       "Concepts",
+       0.098
+      ],
+      [
+       "Entities",
+       0.06
+      ],
+      [
+       "Information",
+       0.029
+      ]
+     ]
+    },
+    "People": {
+     "n": 14168,
+     "top": [
+      [
+       "Humans",
+       0.359
+      ],
+      [
+       "Culture",
+       0.1
+      ],
+      [
+       "Government",
+       0.088
+      ],
+      [
+       "History",
+       0.078
+      ]
+     ]
+    },
+    "Philosophy and religion": {
+     "n": 1564,
+     "top": [
+      [
+       "Religion",
+       0.26
+      ],
+      [
+       "Culture",
+       0.153
+      ],
+      [
+       "Philosophy",
+       0.075
+      ],
+      [
+       "Humanities",
+       0.065
+      ]
+     ]
+    },
+    "Physical sciences": {
+     "n": 4763,
+     "top": [
+      [
+       "Science",
+       0.151
+      ],
+      [
+       "Universe",
+       0.121
+      ],
+      [
+       "Academic disciplines",
+       0.102
+      ],
+      [
+       "Concepts",
+       0.102
+      ]
+     ]
+    },
+    "Society and social sciences": {
+     "n": 4415,
+     "top": [
+      [
+       "Culture",
+       0.149
+      ],
+      [
+       "Economy",
+       0.125
+      ],
+      [
+       "Government",
+       0.089
+      ],
+      [
+       "Society",
+       0.071
+      ]
+     ]
+    },
+    "Technology": {
+     "n": 3305,
+     "top": [
+      [
+       "Technology",
+       0.175
+      ],
+      [
+       "Engineering",
+       0.149
+      ],
+      [
+       "Culture",
+       0.14
+      ],
+      [
+       "Energy",
+       0.074
+      ]
+     ]
+    }
+   },
+   "by_category_topic": {
+    "Academic disciplines": {
+     "n": 1598,
+     "top": [
+      [
+       "People",
+       0.469
+      ],
+      [
+       "Physical sciences",
+       0.305
+      ],
+      [
+       "Biology and health sciences",
+       0.091
+      ]
+     ]
+    },
+    "Behavior": {
+     "n": 1668,
+     "top": [
+      [
+       "Biology and health sciences",
+       0.356
+      ],
+      [
+       "People",
+       0.179
+      ],
+      [
+       "Society and social sciences",
+       0.121
+      ]
+     ]
+    },
+    "Communication": {
+     "n": 316,
+     "top": [
+      [
+       "Society and social sciences",
+       0.203
+      ],
+      [
+       "Biology and health sciences",
+       0.184
+      ],
+      [
+       "People",
+       0.174
+      ]
+     ]
+    },
+    "Concepts": {
+     "n": 1017,
+     "top": [
+      [
+       "Physical sciences",
+       0.478
+      ],
+      [
+       "Mathematics",
+       0.117
+      ],
+      [
+       "Society and social sciences",
+       0.096
+      ]
+     ]
+    },
+    "Culture": {
+     "n": 6616,
+     "top": [
+      [
+       "People",
+       0.213
+      ],
+      [
+       "Arts",
+       0.192
+      ],
+      [
+       "Everyday life",
+       0.167
+      ]
+     ]
+    },
+    "Economy": {
+     "n": 1505,
+     "top": [
+      [
+       "Society and social sciences",
+       0.368
+      ],
+      [
+       "Geography",
+       0.174
+      ],
+      [
+       "Technology",
+       0.15
+      ]
+     ]
+    },
+    "Education": {
+     "n": 732,
+     "top": [
+      [
+       "People",
+       0.503
+      ],
+      [
+       "Society and social sciences",
+       0.27
+      ],
+      [
+       "Arts",
+       0.074
+      ]
+     ]
+    },
+    "Energy": {
+     "n": 429,
+     "top": [
+      [
+       "Technology",
+       0.566
+      ],
+      [
+       "Physical sciences",
+       0.252
+      ],
+      [
+       "People",
+       0.107
+      ]
+     ]
+    },
+    "Engineering": {
+     "n": 1196,
+     "top": [
+      [
+       "Technology",
+       0.413
+      ],
+      [
+       "Physical sciences",
+       0.283
+      ],
+      [
+       "People",
+       0.123
+      ]
+     ]
+    },
+    "Entities": {
+     "n": 1257,
+     "top": [
+      [
+       "Physical sciences",
+       0.219
+      ],
+      [
+       "Biology and health sciences",
+       0.202
+      ],
+      [
+       "People",
+       0.154
+      ]
+     ]
+    },
+    "Food and drink": {
+     "n": 1192,
+     "top": [
+      [
+       "Everyday life",
+       0.478
+      ],
+      [
+       "Biology and health sciences",
+       0.309
+      ],
+      [
+       "Physical sciences",
+       0.085
+      ]
+     ]
+    },
+    "Geography": {
+     "n": 4359,
+     "top": [
+      [
+       "Geography",
+       0.774
+      ],
+      [
+       "Physical sciences",
+       0.081
+      ],
+      [
+       "People",
+       0.052
+      ]
+     ]
+    },
+    "Government": {
+     "n": 2606,
+     "top": [
+      [
+       "People",
+       0.477
+      ],
+      [
+       "History",
+       0.186
+      ],
+      [
+       "Society and social sciences",
+       0.15
+      ]
+     ]
+    },
+    "Health": {
+     "n": 1477,
+     "top": [
+      [
+       "Biology and health sciences",
+       0.525
+      ],
+      [
+       "People",
+       0.221
+      ],
+      [
+       "Physical sciences",
+       0.085
+      ]
+     ]
+    },
+    "History": {
+     "n": 3207,
+     "top": [
+      [
+       "History",
+       0.349
+      ],
+      [
+       "People",
+       0.346
+      ],
+      [
+       "Biology and health sciences",
+       0.062
+      ]
+     ]
+    },
+    "Humanities": {
+     "n": 1552,
+     "top": [
+      [
+       "Arts",
+       0.4
+      ],
+      [
+       "People",
+       0.292
+      ],
+      [
+       "Society and social sciences",
+       0.112
+      ]
+     ]
+    },
+    "Humans": {
+     "n": 6698,
+     "top": [
+      [
+       "People",
+       0.759
+      ],
+      [
+       "Biology and health sciences",
+       0.126
+      ],
+      [
+       "Geography",
+       0.029
+      ]
+     ]
+    },
+    "Information": {
+     "n": 480,
+     "top": [
+      [
+       "Society and social sciences",
+       0.204
+      ],
+      [
+       "Technology",
+       0.202
+      ],
+      [
+       "Biology and health sciences",
+       0.131
+      ]
+     ]
+    },
+    "Knowledge": {
+     "n": 285,
+     "top": [
+      [
+       "People",
+       0.281
+      ],
+      [
+       "Philosophy and religion",
+       0.193
+      ],
+      [
+       "Society and social sciences",
+       0.158
+      ]
+     ]
+    },
+    "Language": {
+     "n": 913,
+     "top": [
+      [
+       "Society and social sciences",
+       0.299
+      ],
+      [
+       "Biology and health sciences",
+       0.215
+      ],
+      [
+       "Arts",
+       0.134
+      ]
+     ]
+    },
+    "Law": {
+     "n": 545,
+     "top": [
+      [
+       "People",
+       0.554
+      ],
+      [
+       "Society and social sciences",
+       0.336
+      ],
+      [
+       "History",
+       0.05
+      ]
+     ]
+    },
+    "Life": {
+     "n": 1455,
+     "top": [
+      [
+       "Biology and health sciences",
+       0.797
+      ],
+      [
+       "People",
+       0.071
+      ],
+      [
+       "Physical sciences",
+       0.033
+      ]
+     ]
+    },
+    "Lists": {
+     "n": 45,
+     "top": [
+      [
+       "Arts",
+       0.178
+      ],
+      [
+       "History",
+       0.133
+      ],
+      [
+       "Physical sciences",
+       0.133
+      ]
+     ]
+    },
+    "Main topic articles": {
+     "n": 4,
+     "top": [
+      [
+       "Philosophy and religion",
+       0.5
+      ],
+      [
+       "Mathematics",
+       0.25
+      ],
+      [
+       "Society and social sciences",
+       0.25
+      ]
+     ]
+    },
+    "Mass media": {
+     "n": 998,
+     "top": [
+      [
+       "Arts",
+       0.417
+      ],
+      [
+       "People",
+       0.248
+      ],
+      [
+       "Society and social sciences",
+       0.149
+      ]
+     ]
+    },
+    "Mathematics": {
+     "n": 1382,
+     "top": [
+      [
+       "Mathematics",
+       0.617
+      ],
+      [
+       "Physical sciences",
+       0.187
+      ],
+      [
+       "People",
+       0.114
+      ]
+     ]
+    },
+    "Philosophy": {
+     "n": 301,
+     "top": [
+      [
+       "Philosophy and religion",
+       0.389
+      ],
+      [
+       "People",
+       0.359
+      ],
+      [
+       "Arts",
+       0.096
+      ]
+     ]
+    },
+    "Politics": {
+     "n": 1024,
+     "top": [
+      [
+       "History",
+       0.323
+      ],
+      [
+       "People",
+       0.305
+      ],
+      [
+       "Society and social sciences",
+       0.226
+      ]
+     ]
+    },
+    "Religion": {
+     "n": 734,
+     "top": [
+      [
+       "Philosophy and religion",
+       0.554
+      ],
+      [
+       "People",
+       0.236
+      ],
+      [
+       "Arts",
+       0.075
+      ]
+     ]
+    },
+    "Science": {
+     "n": 1075,
+     "top": [
+      [
+       "Physical sciences",
+       0.671
+      ],
+      [
+       "Technology",
+       0.074
+      ],
+      [
+       "People",
+       0.073
+      ]
+     ]
+    },
+    "Society": {
+     "n": 1188,
+     "top": [
+      [
+       "Society and social sciences",
+       0.265
+      ],
+      [
+       "People",
+       0.206
+      ],
+      [
+       "Geography",
+       0.099
+      ]
+     ]
+    },
+    "Technology": {
+     "n": 1075,
+     "top": [
+      [
+       "Technology",
+       0.537
+      ],
+      [
+       "People",
+       0.159
+      ],
+      [
+       "Physical sciences",
+       0.068
+      ]
+     ]
+    },
+    "Time": {
+     "n": 337,
+     "top": [
+      [
+       "Physical sciences",
+       0.252
+      ],
+      [
+       "Technology",
+       0.166
+      ],
+      [
+       "Arts",
+       0.16
+      ]
+     ]
+    },
+    "Universe": {
+     "n": 606,
+     "top": [
+      [
+       "Physical sciences",
+       0.949
+      ],
+      [
+       "Technology",
+       0.026
+      ],
+      [
+       "Biology and health sciences",
+       0.012
+      ]
+     ]
+    }
+   }
+  },
+  "topical": {
+   "all": {
+    "articles": 49872,
+    "nmi": 0.1169,
+    "vital_given_category": 0.3176,
+    "category_given_vital": 0.8716
+   },
+   "level_le_3": {
+    "articles": 1002,
+    "nmi": 0.1895,
+    "vital_given_category": 0.2675,
+    "category_given_vital": 0.7385
+   },
+   "level_le_4": {
+    "articles": 10028,
+    "nmi": 0.1144,
+    "vital_given_category": 0.2468,
+    "category_given_vital": 0.8765
+   },
+   "share_per_top": {
+    "Behavior": 43466,
+    "Humans": 3899,
+    "Science": 1132,
+    "Humanities": 406,
+    "Life": 179,
+    "Economy": 176,
+    "Culture": 170,
+    "History": 166
+   },
+   "by_vital_topic": {
+    "(none)": {
+     "n": 4,
+     "top": [
+      [
+       "Behavior",
+       0.75
+      ],
+      [
+       "Humans",
+       0.25
+      ]
+     ]
+    },
+    "Arts": {
+     "n": 3822,
+     "top": [
+      [
+       "Behavior",
+       0.987
+      ],
+      [
+       "Humanities",
+       0.004
+      ],
+      [
+       "Culture",
+       0.004
+      ],
+      [
+       "Humans",
+       0.003
+      ]
+     ]
+    },
+    "Biology and health sciences": {
+     "n": 5705,
+     "top": [
+      [
+       "Behavior",
+       0.904
+      ],
+      [
+       "Humans",
+       0.03
+      ],
+      [
+       "Life",
+       0.027
+      ],
+      [
+       "Health",
+       0.017
+      ]
+     ]
+    },
+    "Everyday life": {
+     "n": 2463,
+     "top": [
+      [
+       "Behavior",
+       0.907
+      ],
+      [
+       "Food and drink",
+       0.045
+      ],
+      [
+       "Economy",
+       0.023
+      ],
+      [
+       "Humans",
+       0.012
+      ]
+     ]
+    },
+    "Geography": {
+     "n": 5184,
+     "top": [
+      [
+       "Behavior",
+       0.989
+      ],
+      [
+       "Science",
+       0.007
+      ],
+      [
+       "Humans",
+       0.002
+      ],
+      [
+       "Culture",
+       0.001
+      ]
+     ]
+    },
+    "History": {
+     "n": 3267,
+     "top": [
+      [
+       "Behavior",
+       0.946
+      ],
+      [
+       "History",
+       0.021
+      ],
+      [
+       "Culture",
+       0.017
+      ],
+      [
+       "Humanities",
+       0.007
+      ]
+     ]
+    },
+    "Mathematics": {
+     "n": 1212,
+     "top": [
+      [
+       "Behavior",
+       0.96
+      ],
+      [
+       "Humanities",
+       0.02
+      ],
+      [
+       "Science",
+       0.011
+      ],
+      [
+       "Humans",
+       0.008
+      ]
+     ]
+    },
+    "People": {
+     "n": 14168,
+     "top": [
+      [
+       "Behavior",
+       0.779
+      ],
+      [
+       "Humans",
+       0.217
+      ],
+      [
+       "Culture",
+       0.002
+      ],
+      [
+       "Humanities",
+       0.001
+      ]
+     ]
+    },
+    "Philosophy and religion": {
+     "n": 1564,
+     "top": [
+      [
+       "Behavior",
+       0.844
+      ],
+      [
+       "Humanities",
+       0.099
+      ],
+      [
+       "Humans",
+       0.043
+      ],
+      [
+       "History",
+       0.004
+      ]
+     ]
+    },
+    "Physical sciences": {
+     "n": 4763,
+     "top": [
+      [
+       "Behavior",
+       0.742
+      ],
+      [
+       "Science",
+       0.208
+      ],
+      [
+       "Humans",
+       0.03
+      ],
+      [
+       "Humanities",
+       0.006
+      ]
+     ]
+    },
+    "Society and social sciences": {
+     "n": 4415,
+     "top": [
+      [
+       "Behavior",
+       0.88
+      ],
+      [
+       "Humans",
+       0.072
+      ],
+      [
+       "Humanities",
+       0.016
+      ],
+      [
+       "Economy",
+       0.016
+      ]
+     ]
+    },
+    "Technology": {
+     "n": 3305,
+     "top": [
+      [
+       "Behavior",
+       0.949
+      ],
+      [
+       "Science",
+       0.015
+      ],
+      [
+       "Humans",
+       0.011
+      ],
+      [
+       "Humanities",
+       0.006
+      ]
+     ]
+    }
+   },
+   "by_category_topic": {
+    "Behavior": {
+     "n": 43466,
+     "top": [
+      [
+       "People",
+       0.254
+      ],
+      [
+       "Biology and health sciences",
+       0.119
+      ],
+      [
+       "Geography",
+       0.118
+      ]
+     ]
+    },
+    "Communication": {
+     "n": 22,
+     "top": [
+      [
+       "Society and social sciences",
+       0.682
+      ],
+      [
+       "Technology",
+       0.273
+      ],
+      [
+       "History",
+       0.045
+      ]
+     ]
+    },
+    "Culture": {
+     "n": 170,
+     "top": [
+      [
+       "History",
+       0.318
+      ],
+      [
+       "Society and social sciences",
+       0.194
+      ],
+      [
+       "People",
+       0.165
+      ]
+     ]
+    },
+    "Economy": {
+     "n": 176,
+     "top": [
+      [
+       "Society and social sciences",
+       0.403
+      ],
+      [
+       "Everyday life",
+       0.318
+      ],
+      [
+       "Technology",
+       0.091
+      ]
+     ]
+    },
+    "Food and drink": {
+     "n": 119,
+     "top": [
+      [
+       "Everyday life",
+       0.933
+      ],
+      [
+       "Biology and health sciences",
+       0.05
+      ],
+      [
+       "Society and social sciences",
+       0.008
+      ]
+     ]
+    },
+    "Health": {
+     "n": 122,
+     "top": [
+      [
+       "Biology and health sciences",
+       0.787
+      ],
+      [
+       "Technology",
+       0.115
+      ],
+      [
+       "Physical sciences",
+       0.082
+      ]
+     ]
+    },
+    "History": {
+     "n": 166,
+     "top": [
+      [
+       "History",
+       0.404
+      ],
+      [
+       "Biology and health sciences",
+       0.367
+      ],
+      [
+       "Physical sciences",
+       0.114
+      ]
+     ]
+    },
+    "Humanities": {
+     "n": 406,
+     "top": [
+      [
+       "Philosophy and religion",
+       0.382
+      ],
+      [
+       "Society and social sciences",
+       0.175
+      ],
+      [
+       "Biology and health sciences",
+       0.071
+      ]
+     ]
+    },
+    "Humans": {
+     "n": 3899,
+     "top": [
+      [
+       "People",
+       0.789
+      ],
+      [
+       "Society and social sciences",
+       0.082
+      ],
+      [
+       "Biology and health sciences",
+       0.044
+      ]
+     ]
+    },
+    "Life": {
+     "n": 179,
+     "top": [
+      [
+       "Biology and health sciences",
+       0.86
+      ],
+      [
+       "Technology",
+       0.073
+      ],
+      [
+       "Physical sciences",
+       0.022
+      ]
+     ]
+    },
+    "Science": {
+     "n": 1132,
+     "top": [
+      [
+       "Physical sciences",
+       0.876
+      ],
+      [
+       "Technology",
+       0.043
+      ],
+      [
+       "Geography",
+       0.034
+      ]
+     ]
+    },
+    "Time": {
+     "n": 14,
+     "top": [
+      [
+       "Society and social sciences",
+       0.286
+      ],
+      [
+       "Physical sciences",
+       0.286
+      ],
+      [
+       "Technology",
+       0.214
+      ]
+     ]
+    },
+    "(none)": {
+     "n": 1,
+     "top": [
+      [
+       "Philosophy and religion",
+       1.0
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "top_p31_types_by_topic": {
+  "Arts": [
+   [
+    "Q7725634",
+    "literary work",
+    589
+   ],
+   [
+    "Q105543609",
+    "musical work/composition",
+    242
+   ],
+   [
+    "Q188451",
+    "music genre",
+    241
+   ],
+   [
+    "Q11424",
+    "film",
+    215
+   ],
+   [
+    "Q5398426",
+    "television series",
+    149
+   ]
+  ],
+  "Biology and health sciences": [
+   [
+    "Q16521",
+    "taxon",
+    2498
+   ],
+   [
+    "Q23038290",
+    "fossil taxon",
+    404
+   ],
+   [
+    "Q112193867",
+    "type of disease",
+    355
+   ],
+   [
+    "Q112826905",
+    "class of anatomical entity",
+    244
+   ],
+   [
+    "Q55983715",
+    "organisms known by a particular common name",
+    196
+   ]
+  ],
+  "Everyday life": [
+   [
+    "Q31629",
+    "type of sport",
+    165
+   ],
+   [
+    "Q2312410",
+    "sports discipline",
+    88
+   ],
+   [
+    "Q7889",
+    "video game",
+    56
+   ],
+   [
+    "Q47728",
+    "hobby",
+    54
+   ],
+   [
+    "Q19861951",
+    "type of food or dish",
+    44
+   ]
+  ],
+  "Geography": [
+   [
+    "Q1549591",
+    "big city",
+    1238
+   ],
+   [
+    "Q515",
+    "city",
+    787
+   ],
+   [
+    "Q23442",
+    "island",
+    246
+   ],
+   [
+    "Q4022",
+    "river",
+    213
+   ],
+   [
+    "Q6256",
+    "country",
+    205
+   ]
+  ],
+  "History": [
+   [
+    "Q17524420",
+    "aspect of history",
+    430
+   ],
+   [
+    "Q3024240",
+    "historical country",
+    416
+   ],
+   [
+    "Q17544377",
+    "history of a country or state",
+    184
+   ],
+   [
+    "Q198",
+    "war",
+    171
+   ],
+   [
+    "Q11514315",
+    "historical period",
+    143
+   ]
+  ],
+  "Mathematics": [
+   [
+    "Q24034552",
+    "mathematical concept",
+    96
+   ],
+   [
+    "Q65943",
+    "theorem",
+    84
+   ],
+   [
+    "Q1936384",
+    "branch of mathematics",
+    61
+   ],
+   [
+    "Q20026918",
+    "mathematical theory",
+    23
+   ],
+   [
+    "Q11862829",
+    "academic discipline",
+    21
+   ]
+  ],
+  "People": [
+   [
+    "Q5",
+    "human",
+    13812
+   ],
+   [
+    "Q215380",
+    "musical group",
+    175
+   ],
+   [
+    "Q5741069",
+    "rock band",
+    32
+   ],
+   [
+    "Q109288825",
+    "male duo",
+    21
+   ],
+   [
+    "Q20643955",
+    "human biblical figure",
+    20
+   ]
+  ],
+  "Philosophy and religion": [
+   [
+    "Q23847174",
+    "religious concept",
+    87
+   ],
+   [
+    "Q179461",
+    "religious text",
+    62
+   ],
+   [
+    "Q29154430",
+    "book of the Bible",
+    48
+   ],
+   [
+    "Q7725634",
+    "literary work",
+    46
+   ],
+   [
+    "Q9174",
+    "religion",
+    42
+   ]
+  ],
+  "Physical sciences": [
+   [
+    "Q113145171",
+    "type of chemical entity",
+    305
+   ],
+   [
+    "Q17444909",
+    "astronomical object type",
+    141
+   ],
+   [
+    "Q11344",
+    "chemical element",
+    124
+   ],
+   [
+    "Q47154513",
+    "structural class of chemical entities",
+    109
+   ],
+   [
+    "Q12089225",
+    "mineral species",
+    103
+   ]
+  ],
+  "Society and social sciences": [
+   [
+    "Q1288568",
+    "modern language",
+    207
+   ],
+   [
+    "Q4830453",
+    "business",
+    168
+   ],
+   [
+    "Q11862829",
+    "academic discipline",
+    159
+   ],
+   [
+    "Q33742",
+    "natural language",
+    158
+   ],
+   [
+    "Q891723",
+    "public company",
+    144
+   ]
+  ],
+  "Technology": [
+   [
+    "Q124078422",
+    "weapon type",
+    118
+   ],
+   [
+    "Q11862829",
+    "academic discipline",
+    78
+   ],
+   [
+    "Q5503",
+    "rapid transit",
+    52
+   ],
+   [
+    "Q1047113",
+    "field of study",
+    49
+   ],
+   [
+    "Q268592",
+    "industry",
+    48
+   ]
+  ]
+ }
+}

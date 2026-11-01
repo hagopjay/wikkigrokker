@@ -1,0 +1,412 @@
+{
+ "nodes": 75071,
+ "edges": 111692,
+ "types_used_by_articles": 61442,
+ "edges_with_unknown_value_parent": 5,
+ "type_assignments_with_unknown_value": 7,
+ "nodes_without_english_label": 1585,
+ "cycles": {
+  "components": 5,
+  "nodes_in_components": 15,
+  "largest": [
+   {
+    "size": 6,
+    "sample": [
+     "matter (Q35758)",
+     "baryonic matter (Q6005984)",
+     "common matter (Q10547012)",
+     "substance (Q10683158)",
+     "ordinary matter (Q28555911)",
+     "physical substance (Q28732711)"
+    ]
+   },
+   {
+    "size": 3,
+    "sample": [
+     "food (Q2095)",
+     "food and beverage (Q118451828)",
+     "food material component (Q141446099)"
+    ]
+   },
+   {
+    "size": 2,
+    "sample": [
+     "sacred place (Q4588528)",
+     "halidom (Q123144667)"
+    ]
+   },
+   {
+    "size": 2,
+    "sample": [
+     "health occupation school (Q70013597)",
+     "medical education institution (Q141027297)"
+    ]
+   },
+   {
+    "size": 2,
+    "sample": [
+     "corruption (Q366)",
+     "abuse of power (Q1975478)"
+    ]
+   }
+  ]
+ },
+ "self_loops": 0,
+ "roots": 3782,
+ "depth_shortest_to_root_classes": {
+  "0": 3782,
+  "1": 613,
+  "2": 883,
+  "3": 1901,
+  "4": 4810,
+  "5": 9973,
+  "6": 13454,
+  "7": 14246,
+  "8": 13325,
+  "9": 7477,
+  "10": 3275,
+  "11": 899,
+  "12": 262,
+  "13": 90,
+  "14": 57,
+  "15": 17,
+  "16": 3,
+  "17": 4
+ },
+ "depth_longest_to_root_classes": {
+  "0": 3782,
+  "1": 254,
+  "2": 179,
+  "3": 207,
+  "4": 301,
+  "5": 320,
+  "6": 387,
+  "7": 517,
+  "8": 700,
+  "9": 651,
+  "10": 861,
+  "11": 1298,
+  "12": 1968,
+  "13": 2889,
+  "14": 2970,
+  "15": 3136,
+  "16": 3063,
+  "17": 3070,
+  "18": 4284,
+  "19": 5223,
+  "20": 6237,
+  "21": 5933,
+  "22": 5377,
+  "23": 4655,
+  "24": 3630,
+  "25": 2716,
+  "26": 2573,
+  "27": 1982,
+  "28": 1833,
+  "29": 1233,
+  "30": 831,
+  "31": 975,
+  "32": 385,
+  "33": 211,
+  "34": 120,
+  "35": 79,
+  "36": 54,
+  "37": 61,
+  "38": 42,
+  "39": 64,
+  "40": 8,
+  "41": 4,
+  "42": 1,
+  "43": 1,
+  "44": 1,
+  "45": 3,
+  "46": 2
+ },
+ "type_assignments_total": 10666211,
+ "share_of_assignments_by_shortest_depth": {
+  "0": 0.0008,
+  "1": 0.0026,
+  "2": 0.2801,
+  "3": 0.0316,
+  "4": 0.062,
+  "5": 0.0614,
+  "6": 0.1357,
+  "7": 0.2883,
+  "8": 0.0767,
+  "9": 0.0312,
+  "10": 0.0285,
+  "11": 0.0007,
+  "12": 0.0001,
+  "13": 0.0002,
+  "14": 0.0,
+  "15": 0.0,
+  "16": 0.0,
+  "17": 0.0
+ },
+ "parents_per_class": {
+  "0": 3782,
+  "1": 42952,
+  "2": 19789,
+  "3": 6181,
+  "4": 1652,
+  "5": 461,
+  "6": 171,
+  "7": 45,
+  "8": 21,
+  "9": 9,
+  "10": 1,
+  "11": 3
+ },
+ "classes_with_2plus_parents": 28337,
+ "top_roots_by_type_assignments": [
+  {
+   "root": "entity (Q35120)",
+   "type_assignments": 10650867,
+   "classes_below": 70891,
+   "share": 0.9986
+  },
+  {
+   "root": "Wikimedia page outside the main knowledge tree (Q17379835)",
+   "type_assignments": 3417602,
+   "classes_below": 447,
+   "share": 0.3204
+  },
+  {
+   "root": "outline of academic disciplines (Q221173)",
+   "type_assignments": 12119,
+   "classes_below": 1614,
+   "share": 0.0011
+  },
+  {
+   "root": "amenity (Q867393)",
+   "type_assignments": 8788,
+   "classes_below": 231,
+   "share": 0.0008
+  },
+  {
+   "root": "agribusiness (Q396622)",
+   "type_assignments": 5785,
+   "classes_below": 137,
+   "share": 0.0005
+  },
+  {
+   "root": "orbit of the Moon (Q210539)",
+   "type_assignments": 3490,
+   "classes_below": 31,
+   "share": 0.0003
+  },
+  {
+   "root": "open space reserve (Q104841249)",
+   "type_assignments": 2095,
+   "classes_below": 15,
+   "share": 0.0002
+  },
+  {
+   "root": "science and technology (Q34104)",
+   "type_assignments": 1738,
+   "classes_below": 355,
+   "share": 0.0002
+  },
+  {
+   "root": "news website (Q17232649)",
+   "type_assignments": 1083,
+   "classes_below": 12,
+   "share": 0.0001
+  },
+  {
+   "root": "design office (Q17994968)",
+   "type_assignments": 1020,
+   "classes_below": 3,
+   "share": 0.0001
+  },
+  {
+   "root": "fiction (Q8253)",
+   "type_assignments": 909,
+   "classes_below": 176,
+   "share": 0.0001
+  },
+  {
+   "root": "terminology (Q8380731)",
+   "type_assignments": 892,
+   "classes_below": 81,
+   "share": 0.0001
+  },
+  {
+   "root": "Vitaceae (Q26220)",
+   "type_assignments": 783,
+   "classes_below": 8,
+   "share": 0.0001
+  },
+  {
+   "root": "Web 2.0 (Q131164)",
+   "type_assignments": 703,
+   "classes_below": 45,
+   "share": 0.0001
+  },
+  {
+   "root": "big and small (Q101051813)",
+   "type_assignments": 669,
+   "classes_below": 27,
+   "share": 0.0001
+  }
+ ],
+ "top_types": [
+  {
+   "type": "Wikimedia category (Q4167836)",
+   "articles": 2216733,
+   "shortest_depth": 2,
+   "longest_depth": 25
+  },
+  {
+   "type": "human (Q5)",
+   "articles": 2154355,
+   "shortest_depth": 7,
+   "longest_depth": 34
+  },
+  {
+   "type": "taxon (Q16521)",
+   "articles": 497692,
+   "shortest_depth": 6,
+   "longest_depth": 6
+  },
+  {
+   "type": "Wikimedia disambiguation page (Q4167410)",
+   "articles": 358376,
+   "shortest_depth": 2,
+   "longest_depth": 25
+  },
+  {
+   "type": "Wikimedia template (Q11266439)",
+   "articles": 224089,
+   "shortest_depth": 2,
+   "longest_depth": 25
+  },
+  {
+   "type": "film (Q11424)",
+   "articles": 162446,
+   "shortest_depth": 8,
+   "longest_depth": 14
+  },
+  {
+   "type": "album (Q482994)",
+   "articles": 161521,
+   "shortest_depth": 10,
+   "longest_depth": 14
+  },
+  {
+   "type": "Wikimedia list article (Q13406463)",
+   "articles": 151239,
+   "shortest_depth": 2,
+   "longest_depth": 26
+  },
+  {
+   "type": "taxonomy template (Q115595777)",
+   "articles": 149906,
+   "shortest_depth": 4,
+   "longest_depth": 27
+  },
+  {
+   "type": "sports season (Q27020041)",
+   "articles": 102715,
+   "shortest_depth": 7,
+   "longest_depth": 19
+  },
+  {
+   "type": "village (Q532)",
+   "articles": 92341,
+   "shortest_depth": 6,
+   "longest_depth": 14
+  },
+  {
+   "type": "human settlement (Q486972)",
+   "articles": 85578,
+   "shortest_depth": 4,
+   "longest_depth": 9
+  },
+  {
+   "type": "family name (Q101352)",
+   "articles": 76493,
+   "shortest_depth": 6,
+   "longest_depth": 18
+  },
+  {
+   "type": "literary work (Q7725634)",
+   "articles": 70367,
+   "shortest_depth": 7,
+   "longest_depth": 11
+  },
+  {
+   "type": "Wikimedia human name disambiguation page (Q22808320)",
+   "articles": 62753,
+   "shortest_depth": 3,
+   "longest_depth": 29
+  },
+  {
+   "type": "business (Q4830453)",
+   "articles": 60250,
+   "shortest_depth": 6,
+   "longest_depth": 17
+  },
+  {
+   "type": "single (Q134556)",
+   "articles": 53207,
+   "shortest_depth": 10,
+   "longest_depth": 14
+  },
+  {
+   "type": "village of Poland (Q3558970)",
+   "articles": 51580,
+   "shortest_depth": 7,
+   "longest_depth": 20
+  },
+  {
+   "type": "musical work/composition (Q105543609)",
+   "articles": 46681,
+   "shortest_depth": 8,
+   "longest_depth": 12
+  },
+  {
+   "type": "television series (Q5398426)",
+   "articles": 44350,
+   "shortest_depth": 8,
+   "longest_depth": 22
+  },
+  {
+   "type": "musical group (Q215380)",
+   "articles": 42658,
+   "shortest_depth": 8,
+   "longest_depth": 17
+  },
+  {
+   "type": "railway station (Q55488)",
+   "articles": 42074,
+   "shortest_depth": 5,
+   "longest_depth": 23
+  },
+  {
+   "type": "river (Q4022)",
+   "articles": 40951,
+   "shortest_depth": 4,
+   "longest_depth": 21
+  },
+  {
+   "type": "commune of France (Q484170)",
+   "articles": 37479,
+   "shortest_depth": 8,
+   "longest_depth": 21
+  },
+  {
+   "type": "unincorporated community (Q17343829)",
+   "articles": 37081,
+   "shortest_depth": 6,
+   "longest_depth": 11
+  }
+ ],
+ "types_needed_for_share": {
+  "0.5": 5,
+  "0.8": 157,
+  "0.9": 822,
+  "0.95": 2849,
+  "0.99": 17218
+ }
+}
