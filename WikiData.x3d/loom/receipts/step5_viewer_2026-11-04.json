@@ -1,0 +1,212 @@
+{
+ "receipt": "wikidata.x3d/1",
+ "name": "step5_viewer_2026-11-04",
+ "built_utc": "2026-11-04T18:29:24+00:00",
+ "code": {
+  "commit": "95da760250042298f3ba14bc4575b0bf96ff1bc3",
+  "dirty": true
+ },
+ "params": {
+  "spread_default": 0.55,
+  "x_ite": "16.7.0 via jsDelivr, sha384 pinned"
+ },
+ "inputs": [
+  {
+   "path": "/home/claude/wikimap/out/type_spine_r7/classes.parquet",
+   "bytes": 3383084,
+   "sha256": "eeddc862cd6be39d4c5c73061f89222fe0fa2f1948cb5867d4155937e30d7de0",
+   "mtime_utc": "2026-11-01T19:41:41+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/out/type_spine_r7/edges.parquet",
+   "bytes": 1181267,
+   "sha256": "64b94cce9868dc4157a19204a51bf050d321eab78e059f93b1d751b675cab8bf",
+   "mtime_utc": "2026-11-01T19:41:41+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/out/type_spine_r7/article_type.parquet",
+   "bytes": 53884562,
+   "sha256": "7dbc676fe14bde2c33f2ab3afdd9f7c35761f8f1c47d4243b41950aef956eb9a",
+   "mtime_utc": "2026-11-01T19:41:40+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/data/dev_slice/articles.parquet",
+   "bytes": 1384396,
+   "sha256": "26802f23c45535fd01c291719b92ccb10e3887dbf48e5ff034fb42bc329e0499",
+   "mtime_utc": "2026-11-01T18:43:35+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/out/clickstream_2026_10/article_traffic.parquet",
+   "bytes": 32922106,
+   "sha256": "6ee3c982f2e6e82c8d3577a97fa46972454a88e9463c77a40db1f58182b24d9a",
+   "mtime_utc": "2026-11-04T17:31:02+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/out/clickstream_2026_10/link_flows.parquet",
+   "bytes": 121526686,
+   "sha256": "9d2e2a39b8abded7659c822a9b1f31397b053109ed91f1c1cefc8091e40574a4",
+   "mtime_utc": "2026-11-04T17:31:06+00:00"
+  },
+  {
+   "path": "/home/claude/wikimap/data/parquet/page.parquet",
+   "bytes": 1051076842,
+   "sha256": "c5f9331398a690b73fcb2881012638883afae7405c161359a6cb1ab5b189a44a",
+   "mtime_utc": "2026-11-01T18:30:00+00:00"
+  }
+ ],
+ "outputs": [
+  {
+   "path": "./index.html",
+   "bytes": 11271,
+   "sha256": "d9f2f947a12297994eea8c6481b10114516bde4c7313cc4ac17aa85bd8332962",
+   "mtime_utc": "2026-11-04T18:13:01+00:00"
+  },
+  {
+   "path": "./app.js",
+   "bytes": 43625,
+   "sha256": "2a69d6976f6a7a709c21f7a36c4984f2409343d7a0156ab3845b56adabc79079",
+   "mtime_utc": "2026-11-04T18:28:09+00:00"
+  },
+  {
+   "path": "./scene.x3d",
+   "bytes": 570628,
+   "sha256": "f56646ce903b1fe049b6ee177b9dd688241889f9d40f4a62f97abab761724269",
+   "mtime_utc": "2026-11-04T18:13:01+00:00"
+  },
+  {
+   "path": "./hyperball_static.x3d",
+   "bytes": 2899585,
+   "sha256": "11b69ce46dc5c7c547e16f7839246604cba2a910ae11edd1a7640e22cf955e31",
+   "mtime_utc": "2026-11-04T18:13:02+00:00"
+  },
+  {
+   "path": "./legend.json",
+   "bytes": 987,
+   "sha256": "1727d68e12aa0089d496ba01bbd2734832302cc078d3484b7ffb6f44164385c9",
+   "mtime_utc": "2026-11-04T18:13:01+00:00"
+  },
+  {
+   "path": "./data/viewer_data.json",
+   "bytes": 2141470,
+   "sha256": "c07971864419715089e1d880bdc329a74e84a077e7331c10973d9053506037d0",
+   "mtime_utc": "2026-11-04T18:07:44+00:00"
+  },
+  {
+   "path": "./data/branch_colors.json",
+   "bytes": 1812,
+   "sha256": "704f13c88e4539b791729956b5af5030794f11915ec21fe0318b376ad90ec77e",
+   "mtime_utc": "2026-11-04T18:07:44+00:00"
+  },
+  {
+   "path": "./sky/front.png",
+   "bytes": 74742,
+   "sha256": "103e7d76d0bfd6e1d9b7e00cf98b57f0e9b85731446c9283fefcacd017d083a6",
+   "mtime_utc": "2026-11-04T17:57:07+00:00"
+  },
+  {
+   "path": "./sky/back.png",
+   "bytes": 74573,
+   "sha256": "4791aa1e6f31f1507718ad0fc90a778573ad8ea7638a3b28d7593144dc11cff7",
+   "mtime_utc": "2026-11-04T17:57:07+00:00"
+  },
+  {
+   "path": "./sky/left.png",
+   "bytes": 73866,
+   "sha256": "c5eb2b6c45f4972f5a17c3b147cdd7195ab8511c5df57a42f51bb13213dfebdd",
+   "mtime_utc": "2026-11-04T17:57:07+00:00"
+  },
+  {
+   "path": "./sky/right.png",
+   "bytes": 74375,
+   "sha256": "a1f8a4b8a3cdbb64d73a20e16af6a66c209b948a15908dc6fec75ee4482398e8",
+   "mtime_utc": "2026-11-04T17:57:07+00:00"
+  },
+  {
+   "path": "./sky/top.png",
+   "bytes": 74678,
+   "sha256": "986d8c0d8aa7d9cd6020455c9c00e71408c363775c1866d7c68dc50bf27f3b81",
+   "mtime_utc": "2026-11-04T17:57:08+00:00"
+  },
+  {
+   "path": "./sky/bottom.png",
+   "bytes": 73961,
+   "sha256": "46151f33bb0660ff5b3f0377d87c4460ded703d0f3abdd10ed9ec2996973d95e",
+   "mtime_utc": "2026-11-04T17:57:08+00:00"
+  }
+ ],
+ "verdicts": {
+  "Truth: clickstream load gate": {
+   "pass": true,
+   "checks": {
+    "every row parsed into 4 typed fields": true,
+    "views_in sums back to resolved rows (conservation)": true,
+    "curr resolves for at least 99% of clicks": true,
+    "no title maps to two page ids": true
+   },
+   "rows": 32180666,
+   "clicks": 5489361719,
+   "resolved_share": 0.99655
+  },
+  "Truth: export conservation": {
+   "pass": true,
+   "checks": {
+    "every visible class reachable from the root": true,
+    "display classes are all visible": true,
+    "subtree counts equal primary_count for every visible class (additivity)": true,
+    "traffic rolls up without loss": true,
+    "Vital articles roll up to the root without loss": true,
+    "layout is finite and inside the unit ball": true,
+    "no two classes share a position": true
+   }
+  },
+  "Palette: spatial-neighbour pairs": {
+   "pass": true,
+   "neighbor_pairs": 9,
+   "threshold_deg": 20.0
+  },
+  "Grammar (x3d.py route; X_ITE parser route logged separately)": {
+   "hyperball_static.x3d": {
+    "pass": true,
+    "detail": [
+     "./hyperball_static.x3d: 14052 elements, 14055 attributes checked, 0 errors, extensions allowed: none"
+    ]
+   },
+   "scene.x3d": {
+    "pass": true,
+    "detail": [
+     "./scene.x3d: 363 elements, 195 attributes checked, 0 errors, extensions allowed: ['BlendMode', 'DepthMode', 'InstancedShape']"
+    ]
+   },
+   "self_test": {
+    "pass": true,
+    "detail": [
+     "x3d.py package 4.0.64.4 loaded, have fun with X3D Graphics!"
+    ]
+   }
+  },
+  "Eyes/Host/Behaviour/Truth (Playwright, software WebGL, artifact-like policy)": {
+   "pass": true,
+   "results": {
+    "negative_control": true,
+    "eyes_home": true,
+    "truth_root_count": true,
+    "behaviour_focus_centred": true,
+    "behaviour_focus_colour": true,
+    "behaviour_label_beside_node": true,
+    "behaviour_infobox_follows": true,
+    "eyes_topic_heat": true,
+    "host": false
+   },
+   "host_note": "host fails only on policy-blocked X_ITE font, stylesheet and tangent-helper requests; none fatal"
+  }
+ },
+ "what_a_pass_does_not_establish": [
+  "frame rate on a real GPU (only software WebGL was run here: about 1 to 3 frames per second)",
+  "behaviour on the live artifact host and on phones (checked under a local policy that imitates the host)",
+  "that the topics of 49,649 Vital Articles stand for the topics of all 7.0 million typed articles",
+  "that clickstream arrivals are page views; pairs with 10 or fewer clicks are missing and bots are included",
+  "that the layout is free of overlaps everywhere; the Eyes witness samples four views"
+ ],
+ "notes": null,
+ "receipt_sha256": "96844a1d863b514256c5d1660f9fe32ed64f44558605989a73d43ac06ce524a6"
+}

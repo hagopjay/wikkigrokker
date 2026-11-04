@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WikiData.x3d: English Wikipedia in hyperbolic space</title>
+<script src="https://cdn.jsdelivr.net/npm/x_ite@16.7.0/dist/x_ite.min.js" integrity="sha384-VLgJPOcbwdbOW2jyUv2ZbSCTfrYlOZfcR51LX4kPOCvIXgItV1kpSU0EPiiTSA96" crossorigin="anonymous"></script>
+<style>
+:root {
+  --field: #0d0d0d;
+  --field-ink: #f0efec;
+  --field-ink-2: #c3c2b7;
+  --field-muted: #898781;
+  --field-rule: #383835;
+  --paper: #f8f9fa;
+  --paper-ink: #202122;
+  --paper-ink-2: #54595d;
+  --paper-rule: #a2a9b1;
+  --paper-band: #eaecf0;
+  --link: #3366cc;
+  --serif: "Linux Libertine", "Libertinus Serif", Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--field); color: var(--field-ink); font: 14px/1.45 var(--sans); overflow: hidden; }
+#stage { position: fixed; top: 0; left: 0; bottom: 0; right: 378px; }
+@media (max-width: 860px) { #stage { right: 0; bottom: 42%; } }
+x3d-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; border: 0; }
+#labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.lab { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 12px; color: var(--field-ink); text-shadow: 0 0 3px var(--field), 0 0 2px var(--field); transform-origin: 0 50%; will-change: transform; }
+.lab.big { font: 15px/1.2 var(--serif); }
+.lab.focus { font: 18px/1.2 var(--serif); }
+.lab.topic { color: var(--field-ink-2); font: italic 13px/1.2 var(--serif); }
+#tip { position: absolute; pointer-events: none; background: var(--paper); color: var(--paper-ink); border: 1px solid var(--paper-rule); padding: 4px 8px; font-size: 12px; display: none; max-width: 280px; z-index: 5; }
+#tip b { font: 15px/1.25 var(--serif); font-weight: normal; display: block; }
+
+/* top bar */
+#bar { position: absolute; left: 16px; top: 14px; right: 392px; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; z-index: 4; }
+#title { font: 22px/1 var(--serif); color: var(--field-ink); margin-right: 6px; }
+#title small { display: block; font: 12px/1.4 var(--sans); color: var(--field-muted); margin-top: 4px; }
+.ctl { display: flex; align-items: center; gap: 6px; color: var(--field-ink-2); font-size: 13px; }
+button, input { font: inherit; }
+.seg { display: inline-flex; border: 1px solid var(--field-rule); border-radius: 3px; overflow: hidden; }
+.seg button, .tog, .act { background: transparent; color: var(--field-ink-2); border: 0; padding: 4px 9px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--field-ink); color: var(--field); }
+.tog { border: 1px solid var(--field-rule); border-radius: 3px; }
+.tog[aria-pressed="true"] { border-color: var(--field-ink-2); color: var(--field-ink); }
+.tog[aria-pressed="true"]::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--field-ink); margin-right: 6px; vertical-align: 1px; }
+.act { border: 1px solid var(--field-rule); border-radius: 3px; }
+.seg button:hover, .tog:hover, .act:hover { color: var(--field-ink); }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #86b6ef; outline-offset: 1px; }
+#search { position: relative; }
+#q { width: 210px; background: #1a1a19; color: var(--field-ink); border: 1px solid var(--field-rule); border-radius: 3px; padding: 5px 9px; }
+#q::placeholder { color: var(--field-muted); }
+#hits { position: absolute; top: 34px; left: 0; width: 320px; background: var(--paper); color: var(--paper-ink); border: 1px solid var(--paper-rule); display: none; z-index: 6; max-height: 340px; overflow: auto; }
+#hits button { display: flex; justify-content: space-between; gap: 10px; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--paper-band); padding: 6px 10px; cursor: pointer; color: var(--paper-ink); }
+#hits button:hover, #hits button.on { background: var(--paper-band); }
+#hits span { color: var(--paper-ink-2); font-size: 12px; }
+input[type=range] { width: 110px; accent-color: var(--field-ink-2); }
+
+/* infobox */
+#box { position: absolute; top: 14px; right: 14px; bottom: 14px; width: 350px; background: var(--paper); color: var(--paper-ink); border: 1px solid var(--paper-rule); overflow-y: auto; z-index: 4; font-size: 13px; }
+#box .hd { padding: 12px 14px 10px; border-bottom: 1px solid var(--paper-rule); }
+#box h1 { font: 26px/1.15 var(--serif); font-weight: normal; margin: 0 0 4px; overflow-wrap: anywhere; }
+#box .kind { color: var(--paper-ink-2); font-size: 12px; }
+#box a { color: var(--link); text-decoration: none; }
+#box a:hover { text-decoration: underline; }
+#crumbs { padding: 7px 14px; border-bottom: 1px solid var(--paper-band); font-size: 12px; color: var(--paper-ink-2); line-height: 1.7; }
+#crumbs button, .lk { background: none; border: 0; padding: 0; color: var(--link); cursor: pointer; font: inherit; text-align: left; }
+#crumbs button:hover, .lk:hover { text-decoration: underline; }
+#crumbs .sep { margin: 0 5px; color: var(--paper-rule); }
+table.facts { width: 100%; border-collapse: collapse; }
+table.facts th, table.facts td { text-align: left; vertical-align: top; padding: 5px 14px; border-bottom: 1px solid var(--paper-band); font-weight: normal; }
+table.facts th { color: var(--paper-ink-2); width: 46%; }
+table.facts td { font-variant-numeric: tabular-nums; }
+#box h2 { font: 17px/1.3 var(--serif); font-weight: normal; margin: 0; padding: 12px 14px 4px; border-top: 1px solid var(--paper-rule); }
+#box .note { color: var(--paper-ink-2); font-size: 12px; padding: 0 14px 6px; margin: 0; }
+#box ol, #box ul { margin: 0; padding: 0 14px 10px 34px; }
+#box li { padding: 2px 0; }
+#box li .num { color: var(--paper-ink-2); font-size: 12px; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.bars { padding: 0 14px 10px; }
+.bar { display: grid; grid-template-columns: 1fr 52px; gap: 2px 8px; align-items: center; padding: 3px 0; cursor: pointer; background: none; border: 0; width: 100%; text-align: left; font: inherit; color: inherit; }
+.bar:hover .bl { text-decoration: underline; }
+.bar .bl { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar .bt { font-size: 12px; color: var(--paper-ink-2); text-align: right; font-variant-numeric: tabular-nums; }
+.bar .bf { grid-column: 1 / 3; height: 6px; background: var(--paper-band); border-radius: 0 3px 3px 0; overflow: hidden; }
+.bar .bf i { display: block; height: 100%; background: #2a78d6; border-radius: 0 3px 3px 0; }
+.bar.on .bl { font-weight: 600; }
+.flowcols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; padding: 0 14px 10px; }
+.flowcols h3 { font-size: 12px; font-weight: normal; color: var(--paper-ink-2); margin: 0 0 3px; }
+.flowcols ul { padding-left: 16px !important; padding-right: 0 !important; }
+.empty { color: var(--paper-ink-2); font-size: 12px; padding: 0 14px 10px; margin: 0; }
+
+/* legend + footnote */
+#legend { position: absolute; left: 16px; bottom: 14px; z-index: 4; display: grid; grid-template-columns: repeat(2, auto); gap: 2px 18px; font-size: 12px; color: var(--field-ink-2); }
+#legend button { background: none; border: 0; color: inherit; cursor: pointer; padding: 1px 0; text-align: left; display: flex; align-items: center; gap: 7px; font: inherit; }
+#legend button:hover { color: var(--field-ink); }
+#legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+#heat { position: absolute; left: 16px; bottom: 14px; z-index: 4; display: none; background: var(--paper); color: var(--paper-ink); border: 1px solid var(--paper-rule); padding: 8px 10px; font-size: 12px; max-width: 360px; }
+#heat .ramp { display: flex; margin: 6px 0 4px; }
+#heat .ramp i { flex: 1; height: 10px; }
+#heat .ends { display: flex; justify-content: space-between; color: var(--paper-ink-2); }
+#heat button { margin-top: 6px; }
+#foot { position: absolute; right: 392px; bottom: 14px; z-index: 3; font-size: 11px; color: var(--field-muted); text-align: right; max-width: 420px; }
+#help { position: absolute; left: 16px; top: 92px; z-index: 3; font-size: 12px; color: var(--field-muted); max-width: 300px; }
+#err { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; z-index: 9; background: var(--field); color: var(--field-ink); padding: 30px; text-align: center; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+@media (max-width: 860px) {
+  #bar { right: 16px; }
+  #box { top: auto; left: 0; right: 0; bottom: 0; width: auto; height: 42%; border-left: 0; border-right: 0; border-bottom: 0; }
+  #legend, #foot, #help { display: none; }
+  #q { width: 150px; }
+}
+@media (prefers-reduced-motion: reduce) { .lab { will-change: auto; } }
+</style>
+</head>
+<body>
+<h1 class="sr">WikiData.x3d: English Wikipedia's typed articles arranged by Wikidata class in hyperbolic space</h1>
+<div id="stage">
+  <x3d-canvas id="ball" aria-label="Three-dimensional view of the class tree. Use the search box or the panel to move between classes."></x3d-canvas>
+  <div id="labels" aria-hidden="true"></div>
+  <div id="tip" role="status"></div>
+</div>
+
+<div id="bar">
+  <div id="title">WikiData.x3d<small id="subtitle">English Wikipedia, by what each article is about</small></div>
+  <div id="search" class="ctl">
+    <label class="sr" for="q">Find a class</label>
+    <input id="q" type="search" placeholder="Find a class, e.g. human" autocomplete="off" spellcheck="false">
+    <div id="hits" role="listbox" aria-label="Matching classes"></div>
+  </div>
+  <div class="ctl">Size by
+    <span class="seg" role="group" aria-label="Size by">
+      <button id="sz-n" aria-pressed="true">Articles</button><button id="sz-v" aria-pressed="false">Readers</button>
+    </span>
+  </div>
+  <div class="ctl" role="group" aria-label="Layers">
+    <button class="tog" id="t-shell" aria-pressed="false">Topic shell</button>
+    <button class="tog" id="t-alts" aria-pressed="true">Other parents</button>
+    <button class="tog" id="t-flows" aria-pressed="false">Reader flows</button>
+    <button class="tog" id="t-labels" aria-pressed="true">Labels</button>
+  </div>
+  <label class="ctl" for="spread">Spread <input id="spread" type="range" min="0.25" max="1.1" step="0.01"></label>
+  <div class="ctl">
+    <button class="act" id="b-back" title="Previous focus (Backspace)">Back</button>
+    <button class="act" id="b-up" title="Parent class (Escape)">Up</button>
+    <button class="act" id="b-home" title="Back to the root">Home</button>
+    <button class="act" id="b-tour" aria-pressed="false">Tour</button>
+  </div>
+</div>
+<p id="help">Click a sphere to bring that class to the centre. Drag to turn the ball, scroll to zoom. Everything else shrinks toward the rim but stays in view.</p>
+
+<aside id="box" aria-live="polite"></aside>
+<div id="legend" aria-label="Colour key: top-level kinds"></div>
+<div id="heat" role="region" aria-label="Topic highlight"></div>
+<div id="foot"></div>
+<div id="err" role="alert"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

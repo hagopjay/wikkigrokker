@@ -17,7 +17,7 @@ then folds both for display. Plan, design and the ten QA checks live in the plan
 | 2. Type spine (P31 + P279 for all articles, YAGO 4.5 scaffold) | done; the scaffold addenda can still grow |
 | 3. Topic spine (categories projected onto the Vital scaffold) | not started |
 | 4. Reconcile, fold, run all ten checks on the full slice | not started |
-| 5. Export contract and one test viewer | not started |
+| 5. Export contract and one test viewer | first demo done: hyperbolic X3D viewer of the type tree with a Vital Articles topic shell and October 2026 reader traffic (`viewer/`) |
 
 Data snapshot: English Wikipedia dump of 2026-10-01. For all six SQL tables used, the `latest` file and the
 `20261001` file have identical size and timestamp, so everything comes from one snapshot. Wikidata comes from the
@@ -71,6 +71,24 @@ for run in out/type_spine out/type_spine_2; do
   python3 -I scripts/build_type_spine.py data/qlever2 data/qlever_parquet data/parquet data/yago config/scaffold_addenda.csv $run
 done
 python3 -I scripts/type_spine_qa.py out/type_spine out/type_spine_2 data/dev_slice data/parquet out/type_spine_qa
+
+# 6. Step 5 demo: reader traffic, viewer export and layout, colours, X3D scenes, witnesses, receipt
+curl -L -o data/clickstream/clickstream-enwiki-2026-10.tsv.gz \
+  https://dumps.wikimedia.org/other/clickstream/2026-10/clickstream-enwiki-2026-10.tsv.gz   # 468 MB; deleted after the build
+python3 -I scripts/clickstream_traffic.py data/clickstream/clickstream-enwiki-2026-10.tsv.gz data/parquet out/clickstream_2026_10
+python3 -I scripts/build_hyperball.py out/type_spine_r7 data/dev_slice/articles.parquet out/clickstream_2026_10 data/parquet out/hyperball
+cp out/hyperball/viewer_data.json viewer/data/
+cd viewer
+node tools/pair_matrix.mjs <dataviz>/scripts/validate_palette.js "#3987e5,#d95926,#199e70,#c98500,#d55181,#008300,#9085e9,#e66767" "#0d0d0d" > tools/palette_pairs.json
+python3 -I tools/assign_colors.py data/viewer_data.json tools/palette_pairs.json data/branch_colors.json
+python3 -I tools/make_sky.py sky
+python3 -I ../scripts/write_x3d.py data/viewer_data.json data/branch_colors.json .
+python3 -I tools/witness_grammar.py --self-test
+python3 -I tools/witness_grammar.py hyperball_static.x3d
+python3 -I tools/witness_grammar.py scene.x3d --allow-extension InstancedShape BlendMode DepthMode
+python3 -I -m http.server 8765 --bind 127.0.0.1 &      # then open http://127.0.0.1:8765/
+node tools/witness_eyes.mjs http://127.0.0.1:8765/index.html witness
+python3 -I tools/make_receipt.py <name> <data root> . witness/witness_eyes.json
 ```
 
 The multistream index (285 MB) is fetched once from the same mirror directory as the dump.
@@ -114,7 +132,44 @@ Full numbers are in `results/`. Headlines:
 | Type spine | 126,224 classes (7 cycles over 19 classes collapsed), 50 scaffold classes, 98 anchors; 7,012,970 articles (96.7%) get a primary type, 98.8% of them under the scaffold; primary counts add up at every node; two builds are row-identical; 37 s |
 | Type tree vs Vital topics | agreement score 0.50 (category tops: 0.26); People to Person 97%, Geography to Place 88% |
 
+## Step 5 demo: the hyperbolic viewer
+
+`viewer/index.html` shows the 7,142 visible classes of the type tree in hyperbolic 3-space, after Munzner's H3
+layout. Click a class and it slides to the centre and grows while everything else shrinks toward the rim but stays in
+view. Each class is a sphere sized by articles (or by reader arrivals) and coloured by its top-level kind. The
+panel works like an infobox and shows:
+
+- counts, the most-read articles, and the topic mix of the class's Vital Articles;
+- its other Wikidata parents, drawn as white arcs;
+- where readers go next, taken from the October 2026 clickstream.
+
+Two toggles add layers:
+
+- **Topic shell:** puts the Vital Articles topics on a belt behind the ball, with threads from the focus class to each topic it covers. Clicking a topic shades every class by its share.
+- **Reader flows:** animates the largest class-to-class reader flows.
+
+- `scene.x3d` is the live X3D scene that `app.js` drives through X_ITE's scene access interface. `hyperball_static.x3d`
+  is a pure X3D 4.0 scene for desktop viewers: root in focus, labels, the topic shell, and one viewpoint per kind.
+  Copy the `sky/` folder next to it.
+- X_ITE 16.7.0 loads from jsDelivr, pinned by a sha384 integrity hash. `viewer/x_ite/` is an unmodified copy (MIT) used
+  as an offline fallback.
+- Geometry is the hyperboloid model. Frames are composed outward from the focus, so precision is highest where you look.
+  Focus changes animate as a hyperbolic translation combined with a rotation.
+
+| Measure | Result |
+| --- | --- |
+| Clickstream Oct 2026 | 32,180,666 rows; 5,489,361,719 clicks; 99.66% of clicks resolve to an article; 4,841,196 articles with arrivals; 21,765,159 article-to-article link flows |
+| Export | 7,142 classes; counts add up at every class; traffic and Vital Articles (49,649 typed) roll up to the root without loss; 26,304 alternate-parent links between visible classes |
+| Layout | root hemisphere radius 2.11; deepest class 7.8 from the root at the default spread; all positions inside the ball |
+| Witnesses | Grammar 0 errors on both routes; Eyes, Behaviour and Truth pass in software WebGL under a replica of the artifact host's content policy; build receipt in `loom/receipts/` |
+
+Loom techniques used and how they were changed: `loom/LEDGER.md`. Event log: `loom/events.jsonl`
+(`python3 loom/loomlog.py verify`).
+
 ## Known gaps
+
+- The viewer was rendered only with software WebGL here (about 1 to 3 frames per second); real-GPU frame rate and phone
+  layout are not yet checked. The topic shell covers the 49,649 typed Vital Articles, not all articles (Step 3).
 
 - `queries/class_edges_p31.rq` reproduces the step 0 class export exactly (zero differing lines). The SPARQL texts behind
   `item_types` (P31 pairs) and `type_counts` were run interactively and are still not saved.

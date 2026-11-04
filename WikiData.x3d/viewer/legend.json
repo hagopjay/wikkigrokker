@@ -1,0 +1,72 @@
+[
+ {
+  "label": "Thing",
+  "hex": "#f0efec",
+  "group": "root"
+ },
+ {
+  "label": "Person",
+  "hex": "#3987e5",
+  "group": "type"
+ },
+ {
+  "label": "Place",
+  "hex": "#199e70",
+  "group": "type"
+ },
+ {
+  "label": "Creative work",
+  "hex": "#c98500",
+  "group": "type"
+ },
+ {
+  "label": "Organization",
+  "hex": "#d95926",
+  "group": "type"
+ },
+ {
+  "label": "Wikimedia page",
+  "hex": "#898781",
+  "group": "meta"
+ },
+ {
+  "label": "Event",
+  "hex": "#d55181",
+  "group": "type"
+ },
+ {
+  "label": "Taxon",
+  "hex": "#e66767",
+  "group": "type"
+ },
+ {
+  "label": "Intangible",
+  "hex": "#008300",
+  "group": "type"
+ },
+ {
+  "label": "Product",
+  "hex": "#9085e9",
+  "group": "type"
+ },
+ {
+  "label": "Unclassified",
+  "hex": "#898781",
+  "group": "meta"
+ },
+ {
+  "label": "Bio chem entity",
+  "hex": "#c3c2b7",
+  "group": "other"
+ },
+ {
+  "label": "Fictional entity",
+  "hex": "#c3c2b7",
+  "group": "other"
+ },
+ {
+  "label": "Individual animal",
+  "hex": "#c3c2b7",
+  "group": "other"
+ }
+]

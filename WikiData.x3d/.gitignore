@@ -4,3 +4,4 @@ out/
 *.duckdb
 tmp/
 __pycache__/
+!viewer/data/

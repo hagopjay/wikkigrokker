@@ -1,0 +1,134 @@
+{
+ "branch_colors": {
+  "1": "#3987e5",
+  "35": "#199e70",
+  "1835": "#c98500",
+  "2453": "#d95926",
+  "3667": "#898781",
+  "3713": "#d55181",
+  "4883": "#e66767",
+  "4910": "#008300",
+  "5495": "#9085e9",
+  "6361": "#898781",
+  "7004": "#c3c2b7",
+  "7012": "#c3c2b7",
+  "7138": "#c3c2b7"
+ },
+ "legend": [
+  {
+   "label": "Person",
+   "hex": "#3987e5",
+   "group": "type"
+  },
+  {
+   "label": "Place",
+   "hex": "#199e70",
+   "group": "type"
+  },
+  {
+   "label": "Creative work",
+   "hex": "#c98500",
+   "group": "type"
+  },
+  {
+   "label": "Organization",
+   "hex": "#d95926",
+   "group": "type"
+  },
+  {
+   "label": "Wikimedia page",
+   "hex": "#898781",
+   "group": "meta"
+  },
+  {
+   "label": "Event",
+   "hex": "#d55181",
+   "group": "type"
+  },
+  {
+   "label": "Taxon",
+   "hex": "#e66767",
+   "group": "type"
+  },
+  {
+   "label": "Intangible",
+   "hex": "#008300",
+   "group": "type"
+  },
+  {
+   "label": "Product",
+   "hex": "#9085e9",
+   "group": "type"
+  },
+  {
+   "label": "Unclassified",
+   "hex": "#898781",
+   "group": "meta"
+  },
+  {
+   "label": "Bio chem entity",
+   "hex": "#c3c2b7",
+   "group": "other"
+  },
+  {
+   "label": "Fictional entity",
+   "hex": "#c3c2b7",
+   "group": "other"
+  },
+  {
+   "label": "Individual animal",
+   "hex": "#c3c2b7",
+   "group": "other"
+  }
+ ],
+ "neighbor_deg": 20.0,
+ "neighbor_pairs": [
+  [
+   "Person",
+   "Event",
+   0.3
+  ],
+  [
+   "Person",
+   "Intangible",
+   7.6
+  ],
+  [
+   "Place",
+   "Creative work",
+   6.5
+  ],
+  [
+   "Place",
+   "Organization",
+   2.3
+  ],
+  [
+   "Place",
+   "Product",
+   8.2
+  ],
+  [
+   "Creative work",
+   "Event",
+   19.3
+  ],
+  [
+   "Creative work",
+   "Product",
+   4.7
+  ],
+  [
+   "Organization",
+   "Product",
+   9.3
+  ],
+  [
+   "Event",
+   "Intangible",
+   0.1
+  ]
+ ],
+ "failing_neighbor_pairs": [],
+ "surface": "#0d0d0d"
+}

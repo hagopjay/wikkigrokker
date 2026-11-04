@@ -1,0 +1,73 @@
+{
+ "negative_control": {
+  "pass": true,
+  "note": "blank page must not look rendered",
+  "lit": 0,
+  "hueBins": 0
+ },
+ "eyes_home": {
+  "pass": true,
+  "lit": 0.4452955974842767,
+  "hueBins": 13,
+  "need": "lit > 3%, >= 4 hue bins"
+ },
+ "truth_root_count": {
+  "pass": true,
+  "want": "7,012,970",
+  "found": true
+ },
+ "behaviour_focus_centred": {
+  "pass": true,
+  "sx": 531,
+  "sy": 450,
+  "W": 1062,
+  "H": 900
+ },
+ "behaviour_focus_colour": {
+  "pass": true,
+  "centre_rgb": [
+   105,
+   149,
+   170
+  ],
+  "want_hex": "#3987e5",
+  "hue_diff_deg": 13
+ },
+ "behaviour_label_beside_node": {
+  "pass": true,
+  "label": "human",
+  "labelX": 558.5,
+  "labelY": 449.796875,
+  "sx": 531,
+  "sy": 450,
+  "sr": 23.5079345703125
+ },
+ "behaviour_infobox_follows": {
+  "pass": true,
+  "box": "human"
+ },
+ "eyes_topic_heat": {
+  "pass": true,
+  "lit": 0.4097243186582809,
+  "hueBins": 11
+ },
+ "host": {
+  "pass": false,
+  "console_errors": [
+   "Loading the font 'http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/assets/fonts/PT_Sans/PTSans-Regular.woff2' violates the following Content Security Policy directive: \"font-src https://fonts.gstatic.com data:\". The action has been blocked.",
+   "Loading the font 'http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/assets/fonts/PT_Sans/PTSans-Bold.woff2' violates the following Content Security Policy directive: \"font-src https://fonts.gstatic.com data:\". The action has been blocked.",
+   "Loading the font 'http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/assets/fonts/PT_Sans/PTSans-Italic.woff2' violates the following Content Security Policy directive: \"font-src https://fonts.gstatic.com data:\". The action has been blocked.",
+   "Loading the stylesheet 'http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/x_ite.css' violates the following Content Security Policy directive: \"style-src 'self' 'unsafe-inline' https://fonts.googleapis.com\". Note that 'style-src-elem' was not explicitly set, so 'style-src' is used as a fallback. The action has been blocked.",
+   "Connecting to 'http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/assets/lib/mikktspace_bg.wasm' violates the following Content Security Policy directive: \"connect-src 'self'\". The action has been blocked.",
+   "Fetch API cannot load http://127.0.0.1:8767/npm/x_ite@16.7.0/dist/assets/lib/mikktspace_bg.wasm. Refused to connect because it violates the document's Content Security Policy."
+  ],
+  "page_errors": [
+   "Event",
+   "TypeError: Failed to fetch"
+  ],
+  "warnings": [
+   "[.WebGL-0xdfc00193200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "load_seconds": 2.889
+ }
+}
