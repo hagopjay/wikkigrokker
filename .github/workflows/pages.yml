@@ -1,0 +1,43 @@
+name: Deploy viewer to GitHub Pages
+
+# Publishes WikiData.x3d/viewer (static files, no build step) as the live demo.
+# Needs Settings > Pages > Source = "GitHub Actions" (upload.sh sets this for you).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "WikiData.x3d/viewer/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage the site
+        run: |
+          set -euo pipefail
+          mkdir _site
+          cp -r WikiData.x3d/viewer/. _site/
+          rm -rf _site/tools _site/witness _site/hyperball_static.x3d
+          cp _site/scene.x3d _site/scene.xml
+          touch _site/.nojekyll
+          test -f _site/index.html && test -f _site/data/viewer_data.json && test -f _site/x_ite/x_ite.min.js
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
